@@ -28,5 +28,3 @@ To address the Credit Card Transactions use case:
 ---
 
 > **Note:** This lab can be implemented using either **Edge Processor** or **Ingest Processor**. For simplicity, Ingest Processor is used throughout this walkthrough.
-
-Would you like to format additional lab sections (such as Lab 2) or generate sample Ingest Processor SPL2 / pipeline rules for these masking steps?
