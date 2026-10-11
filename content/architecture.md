@@ -11,7 +11,7 @@ But first let's introduce you to a new customer.
 ## Customer imnotbiased.com ##
 Imnotbiased.com is a very successful business that deals exclusively with Tyrannosaurs Rex merchandise. 
 
-Operating since 2016 they have gone from selling plush toys to launching a set of mini figures which are sought after globally. Some of these have sold aftermarket for over very lucrative amounts! 
+Operating since 2016 they have gone from selling plush toys to launching a set of mini figures which are sought after globally. Some of these have sold aftermarket for very lucrative amounts! 
 
 They are mostly in AWS cloud as their chosen hosting platform and have been using Splunk for the past 3 years. 
 
