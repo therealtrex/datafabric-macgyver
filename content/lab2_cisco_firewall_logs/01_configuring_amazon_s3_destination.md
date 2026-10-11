@@ -1,9 +1,9 @@
 ## Section One: Setup Amazon S3 destination in Splunk
 
-Before we can route data to Amazon S3 in our Ingest Processor we need to configure what Splunk call **a connection** to Amazon S3. This lab will take us through the process of doing this. 
+Before we can route data to Amazon S3 in our Ingest Processor we need to configure what Splunk calls **a connection** to Amazon S3. This lab will take us through the process of doing this. 
 
 >[!NOTE]
->Configuring Amazon S3 connection in Splunk is not only for routing data into S3. This connection is a set of permissions which can be used for routing and search data using Federated Search.
+>Configuring Amazon S3 connection in Splunk is not only for routing data into S3. This connection is a set of permissions which can be used for routing and searching data using Federated Search.
 
 Let's kick things off!
 
@@ -16,14 +16,14 @@ Let's kick things off!
 
 Welcome to the Data management app within Splunk. There is quite a lot to take in here but by the time you finish this workshop you will be very familiar with it all. 
 
-3. `Click <--> Connections, on the left-hand menu.` See example below: 
+3. `Click <--> Connections button on the left-hand menu.` See example below: 
 
 ![image_tag](/static/lab2/select_connections_data_management.png)
 
-4. On the connection screen, `Click the blue Create connection button` on the right-hand side. 
+4. On the connections screen, `Click the blue Create connection button` on the right-hand side. 
 
 >[!NOTE]
->Splunk data management allows you to create connections to many different data lakes. Eg Amazon S3, Snowflake and many more in the future!
+>Splunk data management app allows you to create connections to many different data lakes. Eg Amazon S3, Snowflake and many more in the future!
 >This allows Splunk to connect and access the data in many different data lakes. 
 >For this workshop we will only be using Amazon S3. 
 
@@ -34,8 +34,8 @@ Welcome to the Data management app within Splunk. There is quite a lot to take i
 6. `Click next`
 
 >[!NOTE]
->Please note that some of the names and labs later on were re-used from an existing full day T-REX workshop on Federated Search for Amazon S3. 
->If you are after a dedicated training day specifically dedicated to Federated Search for Amazon S3, ask your instructor for more information on this.
+>Some of the names used in the labs here were re-used from an existing full day T-REX workshop on Federated Search for Amazon S3. 
+>If you are after a dedicated training day specifically for Federated Search for Amazon S3, ask your instructor for more information on this.
 
 7. On the General section fill out the following fields as described. 
 
@@ -66,7 +66,7 @@ As we will use the federated search for Amazon S3 feature later in these labs we
 
 10. `Click next` when ready. 
 
-You will see now a storage authentication section. This allows Splunk's to authenticate into AWS. Follow the steps below to configure this in your AWS console. There will be a bit of swapping taps in this section. 
+You will now see a storage authentication section. This allows Splunk to authenticate into AWS. Follow the steps below to configure this in your AWS console. There will be a bit of swapping tabs in this section. 
 
 >[!IMPORTANT]
 >As part of this workshop your instructor would have explained how to login to your temporary Amazon account. These next steps assume you already have access and it is working correctly. 
@@ -130,11 +130,11 @@ You will see now a storage authentication section. This allows Splunk's to authe
 ![image_tag](/static/lab2/amazon-s3-connection-created.png)
 
 >[!NOTE]
->It may already be select but you can click on the connection itself to get further information about that connection on the right-hand side. 
+>It may already be selected but you can click on the connection itself to get further information about that connection on the right-hand side. 
 
 Well done! We have now created our first connection in the data management app. We can now move onto the next section of the lab. Creating our S3 bucket and routing the Cisco ASA logs to that bucket. 
 
-### Click  <a>[next](/content/lab2_cisco_firewall_logs/02_creating_s3_routing_data_to_it.md)</a> to start continue on with the lab.
+### Click <a>[next](/content/lab2_cisco_firewall_logs/02_creating_s3_routing_data_to_it.md)</a> to start continue on with the lab.
 
 
 
