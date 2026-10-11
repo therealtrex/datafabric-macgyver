@@ -8,15 +8,17 @@ Let's start off by inspecting the existing credit card transactions currently be
 ![image_tag](/static/lab1/select-search-and-reporting.png)
 
 2. In the search bar, `set the time range picker to be 15 minutes, and enter the following SPL into the search bar.`
+<br>
 
 ```spl
 index="cc_trans_im"
  ```
 
+<br>
 Example result: 
 ![image_tag](/static/lab1/sample-cc-trans-unfiltered.png)
 
-
+<br>
 Spend a few minutes reviewing the returned events.
 
 >[!NOTE]
