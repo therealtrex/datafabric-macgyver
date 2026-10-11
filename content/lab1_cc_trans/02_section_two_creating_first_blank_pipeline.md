@@ -59,6 +59,7 @@ From here we will see there is four ways we can partition (or intercept) our dat
 ```text
 cc_trans_im
 ```
+
 >[!NOTE]
 >Before we click apply you will note we can use operators as well to do partition matches, eg is NULL or my favourite, is not NULL. These can help us to be more flexible in the value to match against in the index field. 
 
