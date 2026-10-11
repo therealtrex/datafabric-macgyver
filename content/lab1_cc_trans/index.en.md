@@ -28,3 +28,8 @@ To address the Credit Card Transactions use case:
 ---
 >[!NOTE]
 >This lab can be implemented using either **Edge Processor** or **Ingest Processor**. For simplicity, Ingest Processor is used throughout this lab.
+
+<br>
+<br>
+
+### Click  <a>[next](/content/lab1_cc_trans/01_section_one_viewing_existing_data.md)</a> to start the lab 
