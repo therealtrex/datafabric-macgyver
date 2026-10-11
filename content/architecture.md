@@ -4,10 +4,11 @@ Welcome to the architecture section of the workshop. This is where we will go ov
 
 But first let's introduce you to a new customer. 
 
+<p align="center">
+<img width="400" src="/static/imnotbiased-logo.png">
+</p>
+
 ## Customer imnotbiased.com ##
-
-![image_tag](/static/imnotbiased-logo.png) 
-
 Imnotbiased.com is a very successful business that deals exclusively with Tyrannosaurs Rex merchandise. 
 
 Operating since 2016 they have gone from selling plush toys to launching a set of mini figures which are sought after globally. Some of these have sold aftermarket for over very lucrative amounts! 
