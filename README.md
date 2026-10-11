@@ -12,9 +12,9 @@ To start us off its key to understand at a high level, T-REX's three pillars of 
 
 ## Pillar One: Data Streaming ##
 
-The data streaming pillar of Splunk's, Cisco Data Fabric is all of the technology pieces which help you make and manipulate data at the source. We cannot do it justice here but some of these are 
-* Edge and Ingest Processor, our data manipulation tools which help you redact, route and manipulate data to where and how you want it. 
-* Our AI powered data onboarding tools which help you use the power of AI to onboards data a agentic speed! 
+The data streaming pillar of Splunk's, Cisco Data Fabric is made up of all the technology pieces that help you manipulate data. We cannot do it justice here but some of these are 
+* Edge and Ingest Processor. These are the main data manipulation tools which help you redact, route and manipulate data to where you want it. 
+* Our AI powered data onboarding tools which help you use the power of AI to onboard data at agentic speed! 
 
 ## Pillar Two: Data Storage ##
 
