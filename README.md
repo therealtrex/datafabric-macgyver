@@ -1,6 +1,7 @@
 # Workshop Welcome
-
-![image_tag](/static/data-fabric-macgyver-logo.png)
+<p align="center">
+<img width="400" src="/static/data-fabric-macgyver-logo.png">
+</p>
 
 Welcome to the Cisco Data Fabric MacGyver workshop! This workshop is designed to get you hands on with some of the concepts behind the Cisco Data Fabric architecture. This architecture is powered by the Splunk platform. 
 
