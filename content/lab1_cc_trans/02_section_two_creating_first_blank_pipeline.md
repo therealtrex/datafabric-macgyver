@@ -129,7 +129,7 @@ See example below:
 >If you are doing this lab as part of an instructor led course then your instructor will explain this to you in more details on how ingest processor pipelines are made up. 
 >Basically this pipeline is just taking our source (cc_trans_im index) data, setting the index of cc_trans_im again and piping it into our destination of Splunk. 
 >
->&nbsp;&nbsp;&nbsp;&nbsp;$pipeline = | from $source
+>&nbsp;&nbsp;&nbsp;&nbsp;$pipeline = | from $source <br>
 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| eval index = "cc_trans_im" | into $destination;
 
 Lastly, in the preview section you can see the event broken out into columns of **_time, _raw, host, index, sourcetype and source.** 
