@@ -107,7 +107,7 @@ The most correct answer is **Specify index for all events.** This is because we 
 >[!NOTE]
 >All of this may not matter anyway if you explicitly set your index fields during a pipeline. Will make sense later. 
 
-15. When ready `select Specify index for all events` and `enter in cc_trans_im` as the value. This is where we want to send the data after it is redacted. See example below: 
+15. When ready `select Specify index for all events` and `select the cc_trans_im index in the Index name field` as the value. This is where we want to send the data after it is redacted. See example below: 
 
 ![image_tag](/static/lab1/index-selected-destination-pipeline.png)
 
