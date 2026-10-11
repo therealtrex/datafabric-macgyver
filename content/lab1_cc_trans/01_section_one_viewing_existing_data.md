@@ -31,4 +31,4 @@ Spend a few minutes reviewing the returned events.
 <br>
 Now we have shown the raw un-masked data coming into the infrastructure monitoring index it is time to start using our Ingest Processor to achieve out goal of splitting this data up and filtering out the PII. 
 
-### Click  <a>[next](/content/lab1_cc_trans/02_section_two_creating_first_blank_pipeline.md)</a> to continue on with the lab 
+### Click <a>[next](/content/lab1_cc_trans/02_section_two_creating_first_blank_pipeline.md)</a> to continue on with the lab 
