@@ -21,6 +21,7 @@ Example result:
 
 <br>
 Spend a few minutes reviewing the returned events.
+
 <br>
 
 >[!NOTE]
