@@ -51,7 +51,7 @@ Splunk's Machine data lake might be a better home for these logs than DDAS.
 
 In this lab we will show you a different way we can route data to Machine Data lake. 
 
-##  Lab 6: Linux Secure logs routing ##
+##  Lab 6: Configuring Federated Search for DDSS ##
 Lastly, imnotbiased.com team are using Dynamic Data Active Archive (DDAA) to archive some of their data once is prove not useful anymore. This is quite an expensive option as they haven't had to restore in a long time. The Splunk partner recommended to switch DDAA to Dynamic Data Self Storage (DDSS) solution which allows you to bring your own Amazon S3 bucket and use that as an archive solution. Initially the team was worries about how difficult it might be to restore this if they ever needed too but with the power of the Cisco Data Fabric you can now search the DDSS data using federated search. 
 
 In this lab we will show you how to configure a DDSS archive on your own S3 bucket then how you can configure Federated Search to search that data. 
