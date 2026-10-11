@@ -8,11 +8,11 @@ As explained during the architecture overview, the team at `imnotbiased.com` wou
 ### Implementation Steps ###
 To address our requirements we will:
 
-1. **Setup Amazon S3 destination by Configuring the data management platform to have Amazon S3 bucket as a destination. 
+1. Setup Amazon S3 destination by Configuring the data management platform to have Amazon S3 bucket as a destination. 
 
-2. **Clone the original Cisco ASA data feed and route the raw Cisco ASA logs to an Amazon S3 bucket we create in our lab.
+2. Clone the original Cisco ASA data feed and route the raw Cisco ASA logs to an Amazon S3 bucket we create in our lab.
 
-3. Lastly, **create a pipeline in ingest processor to filter Cisco ASA logs**
+3. Lastly, create a pipeline in ingest processor to filter Cisco ASA logs.
    
 ---
 
