@@ -60,7 +60,7 @@ From here we will see there is four ways we can partition (or intercept) our dat
 cc_trans_im
 ```
 >[!NOTE]
->Before we click apply you will note we can use operators as well to do partition matches, eg is NULL or my favourite, is not NULL. These can help us to be more flexible in the value to match against in our index field. 
+>Before we click apply you will note we can use operators as well to do partition matches, eg is NULL or my favourite, is not NULL. These can help us to be more flexible in the value to match against in the index field. 
 
 8. `Click Apply when ready.`
 
@@ -76,7 +76,11 @@ Let’s configure a live sample set.
 
 10. `Select Capture new snapshot` from the options. 
 
-11. From here `enter in cc_transactions where it says Name`, we will leave the rest of the defaults for maximum interval and events. See example below:
+11. From here `copy and paste cc_transactions text below into the Name field.` We will leave the rest of the defaults for maximum interval and events. See example below:
+
+```text
+cc_transactions
+```
 
 ![image_tag](/static/lab1/capture_cc_transactions_sample_ingest_processor.png)
 
