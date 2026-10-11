@@ -45,13 +45,16 @@ Not all data is equal. A bunch of web access logs are coming into the Splunk pla
 In this lab we will route some data from DDAS to Machine Datalake Raw table. One there we will search it and then run a promotion of some of it back into DDAS showing the flexibility of the platform. 
 
 ##  Lab 5: Linux Secure logs routing ##
-Finally, the linux secure logs need a new home. They aren't being searched very much but the audit team thinks they are a potential future AI agent training data source. 
+The team wants to find a new home for the linux_secure logs. They aren't being searched very much but the audit team thinks they are a potential future AI agent training data source. 
 
-So Splunk's Machine data lake might be a better home for these logs than DDAS. 
+Splunk's Machine data lake might be a better home for these logs than DDAS. 
 
 In this lab we will show you a different way we can route data to Machine Data lake. 
 
+##  Lab 5: Linux Secure logs routing ##
+Lastly, imnotbiased.com team are using Dynamic Data Active Archive (DDAA) to archive some of their data once is prove not useful anymore. This is quite an expensive option as they haven't had to restore in a long time. The Splunk partner recommended to switch DDAA to Dynamic Data Self Stroage (DDSS) solution which allows you to bring your own Amazon S3 bucket and use that as an archive solution. Initially the team was worries about how difficult it might be to restore this if they ever needed too but with the power of the Cisco Data Fabric you can now search the DDSS data using federated search. 
 
+In this lab we will show you how to configure a DDSS archive on your own S3 bucket then how you can configure Federated Search to search that data. 
 
 
 That's it! Quite a lot hey. Well, let's get started. 
