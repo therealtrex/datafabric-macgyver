@@ -47,7 +47,7 @@ From here we will see there is four ways we can partition (or intercept) our dat
 >As you can imagine. What you select depends on your data. If we had selected sourcetype and we used a very common sourcetype then it would be more difficult to manage the data we care about or worse. We could manipulate the wrong data!
 >Seeing as all of our credit card data is going into the one index and no other data is also going into that index, we are ok to use index as partition type.
 
->[NOTE]
+>[!NOTE]
 >One thing to note as well in this TLDR section. The index value here is not data from an index, which might be your first thought. We are saying if data coming in has a metadata value set of index=xyz then we can match on that result. 
 
 6. Select the `index` partition option.
@@ -59,7 +59,7 @@ From here we will see there is four ways we can partition (or intercept) our dat
 ```text
 cc_trans_im
 ```
->[NOTE]
+>[!NOTE]
 >Before we click apply you will note we can use operators as well to do partition matches, eg is NULL or my favourite, is not NULL. These can help us to be more flexible in the value to match against in our index field. 
 
 8. `Click Apply when ready.`
@@ -99,7 +99,7 @@ Which is the right answer for us? Pause for thinking time...
 
 The most correct answer is **Specify index for all events.** This is because we are matching against an index field. If we were using host or sourcetype then there are potential different outcomes here. Because we are doing an exact match against an index. We are always having the index match. 
 
->[NOTE]
+>[!NOTE]
 >All of this may not matter anyway if you explicitly set your index fields during a pipeline. Will make sense later. 
 
 15. When ready `select Specify index for all events` and `enter in cc_trans_im` as the value. This is where we want to send the data after it is redacted. See example below: 
