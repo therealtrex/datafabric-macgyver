@@ -116,9 +116,10 @@ The most correct answer is **Specify index for all events.** This is because we 
 ### Pipeline editor ###
 
 Welcome to the pipeline editor. There are three main sections on this screen:
-**Top:** Is your pipeline code
-**Bottom:** Is the preview of your post pipeline
-**Right:** Is the pipeline overview section showing you the setup of your pipeline. 
+
+- **Top:** Is your pipeline code
+- **Bottom:** Is the preview of your post pipeline
+- **Right:** Is the pipeline overview section showing you the setup of your pipeline. 
 
 See example below:
 
