@@ -16,10 +16,12 @@ index="cc_trans_im"
 
 <br>
 Example result: 
+
 ![image_tag](/static/lab1/sample-cc-trans-unfiltered.png)
 
 <br>
 Spend a few minutes reviewing the returned events.
+<br>
 
 >[!NOTE]
 > Notice that unmasked PII (such as full credit card account numbers and sensitive customer details) are visible in plain text!
