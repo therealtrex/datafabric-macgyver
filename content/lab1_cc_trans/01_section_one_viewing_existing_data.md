@@ -2,27 +2,25 @@
 
 Let's start off by inspecting the existing credit card transactions currently being ingested into the Splunk platform.
 
-### Step-by-Step Instructions
+### Searching Credit Card Details in Splunk
+- Open Search & Reporting from your Splunk Web home page by selecting `Search & Reporting` from the left-hand navigation menu. See example below:
 
-1. **Open Search & Reporting:**
-   * From your Splunk Web home page, select **Search & Reporting** from the left-hand navigation menu.
+![image_tag](/static/lab1/select-search-and-reporting.png)
 
-    ![image_tag](/static/lab1/select-search-and-reporting.png)
+- In the search bar, `set the time range picker to be 15 minutes, and enter the following SPL into the search bar.`
 
-2. **Run Initial Discovery Search:**
-   * In the search bar, keep all default settings and execute the following SPL search:
-     ```spl
-     index="cc_trans_im"
-     ```
+```spl
+index="cc_trans_im"
+ ```
 
-    ![image_tag](/static/lab1/sample-cc-trans-unfiltered.png)
+Example result: 
+![image_tag](/static/lab1/sample-cc-trans-unfiltered.png)
 
-   * Set the time range picker to **Last 15 minutes**.
+-  Spend a few minutes reviewing the returned events.
 
-3. **Inspect the Dataset:**
-   * Spend a few minutes reviewing the returned events. 
-   * Notice that unmasked PII (such as full credit card account numbers and sensitive customer details) is visible in plain text.
+>[!NOTE]
+> Notice that unmasked PII (such as full credit card account numbers and sensitive customer details) are visible in plain text!
 
----
+Now we have shown the raw un-masked data coming into the infrastructure monitoring index it is time to start using our Ingest Processor to achieve out goal of splitting this data up and filtering out the PII. 
 
-> **Key Takeaway:** Now that we have identified the exposed PII in the current data stream, we will use **Ingest Processor** to filter and mask this data before storage.
+### Click  <a>[next](/content/lab1_cc_trans/02_section_two_creating_first_blank_pipeline.md)</a> to continue on with the lab 
