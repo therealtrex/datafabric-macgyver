@@ -12,7 +12,7 @@ To start us off its key to understand at a high level, T-REX's three pillars of 
 
 ## Pillar One: Data Streaming ##
 
-The data streaming pillar of Splunk's, Cisco Data Fabric is made up of all the technology pieces that help you manipulate data. We cannot do it justice here but some of these are 
+The data streaming pillar of Splunk's, Cisco Data Fabric is made up of all the technology pieces that help you manipulate data. We cannot do it justice here but some of these are:
 * Edge and Ingest Processor. These are the main data manipulation tools which help you redact, route and manipulate data to where you want it. 
 * Our AI powered data onboarding tools which help you use the power of AI to onboard data at agentic speed! 
 
@@ -22,8 +22,9 @@ The data storage tier of TREX's pillars of Cisco Data Fabric is all about what o
 
 ## Pillar Three: Data Analysis ##
 
-Now this pillar can be complicated once you get into it but basically Splunk and the Cisco Data Fabric has you covered. This is how you can analyse your data at ludicrous scale and searching it from no matter where it lives. You can using native build in options like SPL our AI agents or use the modern MCP connectivity and build your own! 
+Now this pillar can be complicated once you get into it but basically Splunk and the Cisco Data Fabric has you covered. This is how you can analyse your data at ludicrous scale and searching it from no matter where it lives. You can use native built in options like SPL or our AI agents. Or if t hat doesn't give you want you want then use Model Context Protocol (MCP) connectivity and build your own agentic interface to query the data! 
 
+## Summary ##
 So as you can see the Cisco Data Fabric powered by Splunk is flexible technology architecture that allows you to get insights out of your data from anywhere at ludicrous scale at the performance and price so you don't have to make the choice on which data I would like to analyse. 
 
 Alright, so now we know a bit about Cisco Data Fabric. Let's talk about what we have in store for you in the workshop labs. 
