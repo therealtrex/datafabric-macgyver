@@ -5,7 +5,7 @@ Welcome to the architecture section of the workshop. This is where we will go ov
 But first let's introduce you to a new customer. 
 
 <p align="center">
-<img width="400" src="/static/imnotbiased-logo.png">
+<img width="200" src="/static/imnotbiased-logo.png">
 </p>
 
 ## Customer imnotbiased.com ##
