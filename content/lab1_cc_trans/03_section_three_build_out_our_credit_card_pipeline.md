@@ -161,7 +161,8 @@ function process_pii($source, $display: boolean = false) {
 
 ![image_tag](/static/lab1/cc_trans_credit_card_masked_out.png)
 
->[!NOTE] This function firstly creates a set of temporary rows for us to easily see the fields for CC_TYPE and CC_NUMBER. Then use regex to filter our the credit card numbers for credit card types. 
+>[!NOTE] 
+>This function firstly creates a set of temporary rows for us to easily see the fields for CC_TYPE and CC_NUMBER. Then use regex to filter our the credit card numbers for credit card types. 
 >Lastly, we then remove those temporary fields. This is left in for easily debugging things in the future. 
 >This function is just an example and can easily be modified to remove additional data if required. 
 
@@ -188,14 +189,16 @@ split_mask_filter_pii_cc_trans.
 
 ![image_tag](/static/lab1/apply_pipeline_cc_trans.png)
 
->[!NOTE] Now a prompt will quickly appear to view the pipeline. If you don’t click in time it disappears, then not to worry.  We can go back to our pipelines easily!
+>[!NOTE] 
+>Now a prompt will quickly appear to view the pipeline. If you don’t click in time it disappears, then not to worry.  We can go back to our pipelines easily!
 
 11.	`Click the Splunk logo top left-hand side.` 
 12.	`Click pipelines` on the left-hand side menu. See example below:
 
 ![image_tag](/static/lab1/cc_trans_pipeline_applied.png)
 
+<br>
 
 Congratulations, you have now built and applied your first pipeline. All that is left to do now is validate everything is doing as we thought! To do that we need to jump back into our Splunk console. 
 
-
+### Click <a>[next](/content/lab1_cc_trans/04_section_four_validate_our_pipeline_is_working.md)</a> to go into the final part of Lab1. 
