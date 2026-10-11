@@ -61,9 +61,9 @@ function drop_non_storable($source) {
 ```
 
 >[!NOTE]
->The new pipeline adds a sub-routine called drop_non_storable. We don\’t expect you to understand exactly what it\’s doing but basically as the text explains there are five regex blocks which run through the _raw event to drop PII data with text like TRACK1, TRACK2, PIN_BLOCK, CC_CCV and PIN. >That way the infrastructure monitoring team cannot see this data. 
+>The new pipeline adds a sub-routine called drop_non_storable. We don’t expect you to understand exactly what it’s doing but basically as the text explains there are five regex blocks which run through the _raw event to drop PII data with text like TRACK1, TRACK2, PIN_BLOCK, CC_CCV and PIN. >That way the infrastructure monitoring team cannot see this data. 
 
-Now is a good time to look at what\’s changed and show you the preview function. 
+Now is a good time to look at what’s changed and show you the preview function. 
 
 3. From the top right-hand corner `press the blue play button.` See example below:
 
@@ -85,7 +85,7 @@ Below is a before and after so you can see easily what that code did.
 >At any point you can go back and forth using **//** in front of the drop_non_storable function and pressing the preview button again. This will magically bring the original data back. 
 >The good news is that if the business decides that nobody can have that data you can put it into both sections of the branch to remove it from both feeds. 
 
-Now let\’s add another function to mask critical data from the infrastructure monitoring team index. 
+Now let’s add another function to mask critical data from the infrastructure monitoring team index. 
 
 
 
