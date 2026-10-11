@@ -95,9 +95,9 @@ From here we will see three options. Read below for an explanation of each:
 
 >[!NOTE]
 >**Default:** Use the index field in the metadata (eg cc_trans_im). Otherwise it will use a default one set for the deployment.
-
+>
 >**Specify index for events with no index:** This is used for circumstances when there is no metadata index is set as the data is coming in. When none is set then use the index you select here. Eg if metadata index is set to t-rex then the index is t-rex otherwise it will be set to what we say here. 
-
+>
 >**Specify index for all events:** This is the just overwrite everything setting and just send to an index we choose. 
 
 Which is the right answer for us? Pause for thinking time...
