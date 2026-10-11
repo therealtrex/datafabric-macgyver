@@ -20,6 +20,7 @@ Example result:
 ![image_tag](/static/lab1/sample-cc-trans-unfiltered.png)
 
 <br>
+
 Spend a few minutes reviewing the returned events.
 
 <br>
