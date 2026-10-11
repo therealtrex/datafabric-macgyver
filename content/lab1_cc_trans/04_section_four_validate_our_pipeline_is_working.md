@@ -32,5 +32,5 @@ Congratulations you have completed the first part of the workshop by splitting o
 
 Well done! Time to move onto Lab 2!
 
-### Click <a>[next](/content/lab2_cisco_firewall_logs/index.md)</a> to go kick off lab2! 
+### Click <a>[next](/content/lab2_cisco_firewall_logs/index.en.md)</a> to go kick off lab2! 
 
