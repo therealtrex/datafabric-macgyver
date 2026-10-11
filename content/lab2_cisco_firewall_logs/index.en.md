@@ -1,4 +1,4 @@
-# Routing Filtering Cisco ASA Firewall Logs
+# Routing and Filtering Cisco ASA Firewall Logs
 
 ## Scenario Overview ##
 As explained during the architecture overview, the team at `imnotbiased.com` would like to route the raw Cisco ASA firewall logs to Amazon S3 for long term archiving. The team would also then like to send a subset of these logs into Splunk for security use cases. 
