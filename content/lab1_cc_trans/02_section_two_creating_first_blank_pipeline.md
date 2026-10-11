@@ -118,18 +118,19 @@ The most correct answer is **Specify index for all events.** This is because we 
 Welcome to the pipeline editor. There are three main sections on this screen:
 
 - **Top:** Is your pipeline code
-- **Bottom:** Is the preview of your post pipeline
+- **Bottom:** Is the preview of the results of your pipeline if applied. 
 - **Right:** Is the pipeline overview section showing you the setup of your pipeline. 
 
 See example below:
 
 ![image_tag](/static/lab1/pipelineoverview-cctrans.png)
 
-If you are doing this lab as part of an instructor led course then your instructor will explain this to you in more details on how ingest processor pipelines are made up. 
-Basically this pipeline is just taking our source (cc_trans_im index) data, setting the index of cc_trans_im again and piping it into our destination of Splunk. 
-
-   $pipeline = | from $source
-       | eval index = "cc_trans_im" | into $destination;
+>[!NOTE]
+>If you are doing this lab as part of an instructor led course then your instructor will explain this to you in more details on how ingest processor pipelines are made up. 
+>Basically this pipeline is just taking our source (cc_trans_im index) data, setting the index of cc_trans_im again and piping it into our destination of Splunk. 
+>
+>&nbsp;&nbsp;&nbsp;&nbsp;$pipeline = | from $source
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| eval index = "cc_trans_im" | into $destination;
 
 Lastly, in the preview section you can see the event broken out into columns of **_time, _raw, host, index, sourcetype and source.** 
 
