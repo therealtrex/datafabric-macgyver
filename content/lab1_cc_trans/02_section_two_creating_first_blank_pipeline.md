@@ -14,7 +14,9 @@ Once logged in, you will see the unified data management overview.
 
 ![image_tag](/static/lab1/datamanagement-select-destinations.png)
 
-You should see the splunk_indexer already exists. This destination is how we will send data through ingest processor into Splunk Cloud for indexing.
+You should see the splunk_indexer already exists. This destination is how we will send data through ingest processor into Splunk Cloud for indexing. See example below:
+
+![image_tag](/static/lab1/destinations_available_datamanagement.png)
 
 Now that we can see the splunk indexer already exists we can move onto our first pipeline. 
 
@@ -130,4 +132,4 @@ Now it is time to start building out our requirements for the lab which were:
 - Filter and mask the original raw log 
 - Put that filtered and masked data back into the cc_trans_im index for the infrastructure monitoring team. 
 
-
+### Click <a>[next](/content/lab1_cc_trans/03_section_three_build_out_our_credit_card_pipeline.md)</a> to continue on with the lab 
