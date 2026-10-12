@@ -1,34 +1,25 @@
-# Cisco Data Fabric MacGyver Lab1: PII Credit Card Transactions
+# Cisco Data Fabric MacGyver Lab3: Splunk's Federated Search for Amazon S3 Service
 
 ## Scenario Overview ##
-As explained during the scenario walkthrough, the team at `imnotbiased.com` needs to mask Personally Identifiable Information (PII) in credit card transaction details. Currently, all staff using Splunk are required to take PII training, and compliance auditors have flagged this access level as an active business risk.
+One of the goals of the `imnotbiased.com` team is to be able to access large volumes of data periodically for random use cases. Currently all of their large volumes of data reside in Amazon S3. For this use case we will dive into the Splunk service called Federated Search for Amazon S3. Over the next 3 parts of this lab we will take you through the understanding and basics of how Federated Search for Amazon S3 works in using different supported methods and capabilities. 
 
 ---
 
 ### Solution Strategy ##
-To resolve this issue, we will use **Ingest Processor** to split and route the data stream into two separate target indexes:
+To resolve this issue, we will use **Federated Search for Amazon S3** to search data from 3 sources of imnobiased.com these are:
 
-* **Index One (Raw / Audit):** Contains the unfiltered, raw data. Access is strictly restricted to specialized audit and compliance personnel.
-* **Index Two (Masked / Monitoring):** Stores sanitized, masked, and filtered credit card transaction data for the infrastructure monitoring team.
-
----
-
-### Implementation Steps ###
-To address the Credit Card Transactions use case:
-
-1. **Clone the Original Feed:**
-   * Route the raw credit card transaction data to the new restricted PII index.
-   * **Target Index:** `cc_trans_pii`
-
-2. **Mask and Filter PII Data:**
-   * Apply data-masking rules to redact PII from the credit card transactions.
-   * Route the sanitized data to the credit card infrastructure monitoring index.
-   * **Target Index:** `cc_trans_im`
+* **CloudFront Access Logs:** Web traffic for their website
+* **VPC Flow Logs:** Data for their network traffic inside their AWS tenancy
+* **AWS WAF Logs:** Data from their internal AWS firewall logs. 
 
 ---
->[!NOTE]
->This lab can be implemented using either **Edge Processor** or **Ingest Processor**. For simplicity, Ingest Processor is used throughout this lab.
+
+>[!IMPORTANT]
+>These labs have come from part of a larger workshop for becoming a Federated MacGyver. This is a dedicated 8 hour course on Federated Search for Amazon S3. 
+>
+>Because of this there will be circumstances where things don't quite make sense, such as naming conventions that don't match exactly what we are doing within the labs for this workshop or screenshots which don't look right.
+>I have done my best to line up everything as best I can but your instructor will be there to help you on the day. 
 
 <br>
 
-### Click  <a>[next](/content/lab1_cc_trans/01_section_one_viewing_existing_data.md)</a> to start the lab 
+### Click  <a>[next](/content/lab3_using_splunk_fs_s3/lab3a_basics_of_fs_s3/index.md)</a> to start the lab. 
