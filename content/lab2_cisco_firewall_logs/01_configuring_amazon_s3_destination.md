@@ -134,7 +134,7 @@ You will now see a storage authentication section. This allows Splunk to authent
 
 Well done! We have now created our first connection in the data management app. We can now move onto the next section of the lab. Creating our S3 bucket and routing the Cisco ASA logs to that bucket. 
 
-### Click <a>[next](/content/lab2_cisco_firewall_logs/02_creating_s3_routing_data_to_it.md)</a> to start continue on with the lab.
+### Click <a>[next](/content/lab2_cisco_firewall_logs/02_creating_s3_routing_config.md)</a> to start continue on with the lab.
 
 
 
