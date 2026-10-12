@@ -1,6 +1,6 @@
-## Section Two: Creating Amazon S3 bucket and routing data to it from Splunk Ingest Processor
+## Section Two: Creating Amazon S3 bucket and configuring Splunk data connection
 
-Now we have successfully created a connection to Amazon S3 in our Data Management app. We can continue onto the next phase which is to create an Amazon S3 bucket that will be used to house our Cisco ASA raw logs. 
+Now we have successfully created a connection to Amazon in our Data Management app. We can continue onto the next phase which is to create an Amazon S3 bucket and then configure a dataset in Splunk data management to be able to route to that bucket.  
 
 ### Creating an Amazon S3 bucket for Cisco ASA ###
 
@@ -13,10 +13,13 @@ Now we have successfully created a connection to Amazon S3 in our Data Managemen
 >[!NOTE]
 >There is a quite a lot to know about using Amazon S3. This workshop will not go into any of the details about it but for this lab all we will say is it is a great low cost storage service which provides near limitless storage and hugely available up time and redundancy. More information on Amazon S3 can be found <a> [here](https://aws.amazon.com/s3/)</a>
 
-3. Find the section where it says **Bucket Name**. `Enter a unique bucket name by copying and pasting the below and appending your name at the end`
+3. Find the section where it says **Bucket Name**. `Enter a unique bucket name by copying and pasting the below, appending your name at the end`
+
+>[!IMPORTANT]
+>You must have `splunk-` at the start of your bucket name. Otherwise the permissions we have configured as part of the role in this workshop will not allow you to write and read files from it. Please use the suggested format in the lab for S3 bucket name. 
 
 ```
-cisco-asa-s3-log-storage-<yournamehere>
+splunk-cisco-asa-s3-log-storage-<yournamehere>
 ```
 
 4. `Leave all remaining defaults`, scroll to the bottom and `click Create Bucket.`
