@@ -22,4 +22,4 @@ To resolve this issue, we will use **Federated Search for Amazon S3** to search 
 
 <br>
 
-### Click  <a>[next](/content/lab3_using_splunk_fs_s3/lab3a_basics_of_fs_s3/index.md)</a> to start the lab. 
+### Click  <a>[next](/content/lab3_using_splunk_fs_s3/lab3a_basics_of_fs_s3/index.en.md)</a> to start the lab. 
