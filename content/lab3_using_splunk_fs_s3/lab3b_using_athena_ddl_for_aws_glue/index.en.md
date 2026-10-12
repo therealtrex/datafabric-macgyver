@@ -1,8 +1,3 @@
----
-title: Lesson Two - VPC Flow Logs
-weight: 30
----
-
 ## Overview
 
 Welcome to lesson two. Now we understand the basics of Splunk's Federated Search for Amazon S3 it's time to take a look at another use case and learn some new tricks. For this use case we will explore VPCFlow Logs.
@@ -19,6 +14,7 @@ After this lesson you will get an understanding of the following:
 
 Below is overview of the architectural pieces we will be reviewing in this lesson.
 
-![Workshop Architecture](/static/images/lesson2/architecture-lesson2.png)
+![Workshop Architecture](/static/lab3/3b/architecture-lesson2.png)
 
-When ready **Click Next** to begin the lesson.
+### Click <a>[next](/content/lab3_using_splunk_fs_s3/lab3b_using_athena_ddl_for_aws_glue/1-understanding-vpc-flow-logs.en.md)</a> to begin! 
+
