@@ -1,8 +1,3 @@
----
-title: Exploring AWS Glue Data Catalog
-weight: 22
----
-
 Now that we understand more around CloudFront access logs and have seen them being generated in Amazon S3, it is time to explore our first AWS Glue data catalog.
 
 ## Exploring AWS Glue ##
@@ -11,9 +6,9 @@ Now that we understand more around CloudFront access logs and have seen them bei
 
 ![Select AWS Glue from the AWS console](/static/lab3/3a/selectawsglue.png)
 
-:::alert{type="info"}
-**AWS Glue** at its heart is an AWS Extract, Transform and Load (ETL) service. There are a lot of features and options around this service we will not cover off in this workshop as we are primarily focusing on the Glue Data Catalog capabilities.
-:::
+>[!NOTE]
+>**AWS Glue** at its heart is an AWS Extract, Transform and Load (ETL) service. There are a lot of features and options around this service we will not cover off in this workshop as we are primarily focusing on the Glue Data Catalog capabilities.
+
 
 2. Welcome to the AWS Glue service. As mentioned above we will be focusing on the Data Catalog features of the AWS Glue service. To begin, **select** the **Databases** link on the left-hand menu **under Data Catalog**.
 
@@ -23,9 +18,9 @@ Now that we understand more around CloudFront access logs and have seen them bei
 
 ![Select Splunk Glue Database that has already been created](/static/lab3/3a/select-splunk-glue-database.png)
 
-:::alert{type="info"}
-**Glue Table Information:** You will note with any glue table it shows you high level information of the name, the database its associated with and also the S3 location where the schema is pointing too.
-:::
+>[!NOTE]
+>**Glue Table Information:** You will note with any glue table it shows you high level information of the name, the database its associated with and also the S3 location where the schema is pointing too.
+
 
 4. Now that we are in the database we see the tables associated with the database. At this point in time there is only one, splunk_cloudfront_access_logs_w3c. It's time to explore this table further. **Click the splunk_cloudfront_access_logs_w3c table** as shown in the screenshot below.
 
@@ -35,9 +30,9 @@ Now that we understand more around CloudFront access logs and have seen them bei
 
 ![Select CloudFront Table Schema Tab](/static/lab3/3a/select-schema-tab-glue-cloudfront-table.png)
 
-:::alert{type="info"}
-From here you can see important information on the schema structure of the CloudFront Access Logs data. Specifically for w3c format which was the default for the CloudFront Access logs. If another format type was selected, e.g. json, then this schema would be different to match the required json format.
-:::
+>[!NOTE]
+>From here you can see important information on the schema structure of the CloudFront Access Logs data. Specifically for w3c format which was the default for the CloudFront Access logs. If another format type was selected, e.g. json, then this schema would be different to match the required json format.
+
 
 ## Compare Log to Schema ##
 Let's now compare the schema to the log file itself and see what we notice.
@@ -64,6 +59,7 @@ Let's now compare the schema to the log file itself and see what we notice.
 
 6. Before we move on feel free to explore any other information in the table. e.g. the Advanced Properties tab. These tend to include any specific information relevant to the structure of the data.
 
-:::alert{type="success"}
 **Congratulations!** Now that you are familiar with an AWS Glue Database and schema it's time to create our first Splunk Federated Index and run a basic search from Splunk on the CloudFront Access Logs.
-:::
+
+### Click <a>[next](/content/lab3_using_splunk_fs_s3/lab3a_basics_of_fs_s3/3-creating-out-first-fs-s3-index.en.md)</a> to begin! 
+
