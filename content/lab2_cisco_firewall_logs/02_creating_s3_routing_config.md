@@ -62,7 +62,7 @@ This is where we can define the dataset type again between searching and writing
 
 - Dataset name: `cisco-asa-s3-logs`
 - Dataset Description: `Dataset for CISCO ASA Logs in S3`
-- Amazon S3 location: `s3://cisco-asa-s3-log-storage-<yourname>` 
+- Amazon S3 location: `s3://splunk-cisco-asa-s3-log-storage-<yourname>` 
 - Usage Radio buttons: `Data routing and federated search`
 
 <br>
