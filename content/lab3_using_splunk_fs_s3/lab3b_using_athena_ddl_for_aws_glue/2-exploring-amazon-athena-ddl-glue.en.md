@@ -18,20 +18,21 @@ In this section of lesson two we will have a look at Amazon Athena and its power
 >![Athena S3 Result Bucket Missing Prompt is shown](/static/lab3/3b/fix-athena-s3-results-bucket-prompt.png)
 
 
-::::expand{header="Fix Athena Query Result Location"}
+<details>
+<summary>Fix Athena Query Result Location</summary>
+<p>1. From the blue box shown above **select Edit Settings**</p>
+<p>2. **Click the blue Manage button on the right hand side** in the query result section. </p>
+<p>3. **Click the Browse S3** blue button on right-hand side.</p>
+<p>3. **Select the splunk-fs-s3-workshop-athenaoutput-xxx s3 bucket.**</p>
+<p>4. Once selected, **click the Choose button.**</p>
+<p>5. Leave all remaining settings and **click Save**</p>
+<p></p>
+<p>![Athena Query Result Bucket Settings with the location of the query result in S3](/static/lab3/3b/athena-query-result-bucket-settings.png)</p>
+<p></p>
+<p>6. You should be prompted with Settings successfully updated green box. You will note you are in the Settings tab now. **Click Editor Tab** to go back to the query editor section of Athena.</p>
+<p></p>
+</details>
 
-1. From the blue box shown above **select Edit Settings**
-2. **Click the blue Manage button on the right hand side** in the query result section. 
-3. **Click the Browse S3** blue button on right-hand side.
-3. **Select the splunk-fs-s3-workshop-athenaoutput-xxx s3 bucket.**
-4. Once selected, **click the Choose button.**
-5. Leave all remaining settings and **click Save**
-
-![Athena Query Result Bucket Settings with the location of the query result in S3](/static/lab3/3b/athena-query-result-bucket-settings.png)
-
-6. You should be prompted with Settings successfully updated green box. You will note you are in the Settings tab now. **Click Editor Tab** to go back to the query editor section of Athena.
-
-::::
 
 >[!NOTE]
 >Before we dive into this Amazon Athena DDL setup for VPC Flow logs, I wanted to quickly call out what we are setting up.
