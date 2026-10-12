@@ -1,8 +1,3 @@
----
-title: CloudFront Access Logs and Amazon S3
-weight: 21
----
-
 To kick things off, let's explore our CloudFront distribution which was spun up as part of the workshop.
 
 ## Explore CloudFront Log Setup ##
@@ -30,9 +25,8 @@ To kick things off, let's explore our CloudFront distribution which was spun up 
 
 8. Next **Click the arrow for Additional settings - optional.**
 
-:::alert{type="info"}
-We will be leaving the remaining defaults, but you can see from the options below we have the ability to select different fields which will modify the log output format. We can also add folders for partioning. This can be useful if you are wanting to search logs from different distributions or dates etc. Feel free to review these (without changing) before moving on.
-:::
+>[!INFO]
+>We will be leaving the remaining defaults, but you can see from the options below we have the ability to select different fields which will modify the log output format. We can also add folders for partitioning. This can be useful if you are wanting to search logs from different distributions or dates etc. Feel free to review these (without changing) before moving on.
 
 9. Leave all the remaining defaults and **click Submit.** See example below.
 
