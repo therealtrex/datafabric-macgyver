@@ -25,21 +25,21 @@ To kick things off, let's explore our CloudFront distribution which was spun up 
 
 8. Next **Click the arrow for Additional settings - optional.**
 
->[!INFO]
+>[!NOTE]
 >We will be leaving the remaining defaults, but you can see from the options below we have the ability to select different fields which will modify the log output format. We can also add folders for partitioning. This can be useful if you are wanting to search logs from different distributions or dates etc. Feel free to review these (without changing) before moving on.
 
 9. Leave all the remaining defaults and **click Submit.** See example below.
 
 ![Fill out CloudFront S3 Logging Details in the options presented](/static/lab3/3a/fill-out-s3-details-cloudfront-logs.png)
 
-:::alert{type="info"}
-Now the logging is enabled, feel free to have a read below some additional information on the CloudFront Access Logs S3 type shown in the logging tab. 
-- **Destination:** AWS Service where the logs are being shipped too. This can vary depending on selected type. For S3 it is the chosen S3 bucket.
-- **Type:** Specifies the logging type selected (e.g. CloudWatch, Firehose or S3). You will note we selected S3. 
-- **Selected Fields:** Enables you to select which fields to include and in what order for each log record. We have left default (all fields, approx 33). 
-- **Partitioning:** Is the folder location where the logs will be delivered too. This has been set to AWSLogs/{account-id}/CloudFront. 
-- **Output format:** This is critical to know. For CloudFront there are 5 options to choose from JSON, Plain, w3c (default), Raw and Parquet. Choosing differently will affect your Glue Table configuration as format differs.
-:::
+>[!NOTE]
+>Now the logging is enabled, feel free to have a read below some additional information on the CloudFront Access Logs S3 type shown in the logging tab. 
+>- **Destination:** AWS Service where the logs are being shipped too. This can vary depending on selected type. For S3 it is the chosen S3 bucket.
+>- **Type:** Specifies the logging type selected (e.g. CloudWatch, Firehose or S3). You will note we selected S3. 
+>- **Selected Fields:** Enables you to select which fields to include and in what order for each log record. We have left default (all fields, approx 33). 
+>- **Partitioning:** Is the folder location where the logs will be delivered too. This has been set to AWSLogs/{account-id}/CloudFront. 
+>- **Output format:** This is critical to know. For CloudFront there are 5 options to choose from JSON, Plain, w3c (default), Raw and Parquet. Choosing differently will affect your Glue Table configuration as format differs.
+
 
 ## Explore CloudFront Logs in S3 ##
 
@@ -47,14 +47,14 @@ Now the logging is enabled, feel free to have a read below some additional infor
 
 ![Open up S3 from Logging Tab as you did before](/static/lab3/3a/selectS3fromcloudfrontlogging.png)
 
-:::alert{type="info"}
-Note: As we have just turned on logs it can take up to around 3-5 minutes for logs to start appearing in your S3 bucket. 
-:::
+>[!NOTE]
+>As we have just turned on logs it can take up to around 3-5 minutes for logs to start appearing in your S3 bucket. 
 
 2. From the S3 bucket you should see an initial folder of **AWSLogs/**. Navigate all the way into the CloudFront folder by **selecting each of the folders for AWSLogs, {account-id} and then CloudFront**. You should see logs files as shown in the image below.
 
 ![View CloudFront Access Logs in S3 bucket section of the console](/static/lab3/3a/viewcloudfrontlogsins3.png)
 
-:::alert{type="success"}
 **Congratulations!** In this part of the lesson we explored CloudFront access logs and saw them being created in S3. Next we will take a look at our first AWS Glue table.
-:::
+
+### Click <a>[next](/content/lab3_using_splunk_fs_s3/lab3a_basics_of_fs_s3/2-understanding-glue-catalog.en.md)</a> to begin! 
+
