@@ -97,6 +97,8 @@ Now, this is where things really get exciting! There are lots of different optio
 >
 >`Federated Search Activate:` Although we could use federated search as a good use case here for this lab, we will be doing very similar capabilities on other labs later on so to save time and confusion we will leave it to those labs later on. So we turned it off for this lab. 
 
+<br>
+
 See example of filled in page below: 
 
 ![image_tag](/static/lab2/configure-dataset-options-s3.png)
@@ -107,6 +109,35 @@ See example of filled in page below:
 
 17. `Click Generate policies` button. 
 
+>[!NOTE]
+>From here you will see a resource access policy which is generated for AWS S3 access. Usually you would have to copy that policy and attach it to our role we looked at earlier. Because it is a workshop we have taken some of the hard work out for you and pre-configured the role with the policies required for this lab.
+>
+>But don't be lazy and have a look at it still. You will note this policy is allow read and write access to the S3 bucket we selected for our dataset. 
 
+18. Once ready, `click next`
 
+19. You will be prompted with a reminder to update those policies. Read the reminder and `Click confirm` when ready. See example below:
 
+![image_tag](/static/lab2/confirmation-of-aws-policy-update.png)
+
+20. Do a final review of your dataset creation and `Click Create Dataset` when ready. 
+
+You should now see a second dataset which has been created in our list. See example below:
+
+![image_tag](/static/lab2/dataset-cisco-asa-logs-s3-created.png)
+
+Before we move onto section three of our lab let's now go back to our SCS tenancy and check if we have a new destination available for our Ingest Processor!
+
+### Validate new Ingest Processor Destination ###
+
+1. From our SCS tenancy page `select the Splunk logo` top left-hand side. 
+
+2. Next click the Destinations option on the left hand menu
+
+You should now see we have a new destination for our cisco-asa-s3-logs! See example screenshot below: 
+
+![image_tag](/static/lab2/cisco-asa-destination-confirmation.png)
+
+Congrats, you have now setup your first dataset destination for Amazon S3! Next we will continue on in section three building out our Ingest Processor pipeline to use our new Amazon S3 destination. 
+
+### Click <a>[next](/content/lab2_cisco_firewall_logs/03_route_cisco_asa_s3_and_filter_logs.md)</a> to continue on with the lab.
