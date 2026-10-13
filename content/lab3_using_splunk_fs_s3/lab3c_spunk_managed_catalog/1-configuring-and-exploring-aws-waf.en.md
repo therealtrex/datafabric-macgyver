@@ -80,4 +80,4 @@ Now that we have configured our AWS WAF Web ACL logs to go to Amazon S3 it is no
 
 **Congratulations!** You have successfully explored AWS WAF log data for more details on blocked requests.
 
-### Click <a>[next](/content/lab3_using_splunk_fs_s3/lab3c_spunk_managed_catalog/1-configuring-and-exploring-aws-waf.en.md)</a> to begin! 
+### Click <a>[next](/content/lab3_using_splunk_fs_s3/lab3c_spunk_managed_catalog/2-configuring-aws-waf-federated-dataset.en.md)</a> to begin! 
