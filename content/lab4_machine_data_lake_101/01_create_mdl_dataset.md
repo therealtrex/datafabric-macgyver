@@ -117,9 +117,9 @@ Now we should see a summary of our new MDL table. See example summary below:
 ![image_tag](/static/lab4/mdl-table-summary-catalog.png)
 
 >[!NOTE]
->Clicking view details here will take you to the section where you can get more information on the configured table and edit it as well. But let's stay focused for now. 
+>Clicking view hamburger (three dots) next to search will take you to the section where you can get more information on the configured table and edit it as well. But let's stay focused for now. 
 
-4. `Click the blue search button` to open up the search page for the MDL table. 
+4. `Click the search button` to open up the search page for the MDL table. 
 
 You will see a promotion warning appear. See example below: 
 
@@ -145,6 +145,11 @@ index=linux_secure earliest=-2m
 
 >[!NOTE]
 >You will notice we used the earliest=-2m command again to quickly check no new data is coming in. 
+
+See example of no results in our search now
+
+![image_tag](/static/lab4/no-results-after-routing-to-mdl-splunk-search.png)
+
 
 We have now configured the MDL table to take all of the linux secure data and we don't have to worry about it going to DDAS anymore. But what if we wanted to promote a set of that data back to DDAS? Well that is the next part of the lab. 
 
