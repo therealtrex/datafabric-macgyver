@@ -9,10 +9,10 @@ In this lab we will route some data from DDAS to Machine Datalake Raw table. Onc
 
 ### Implementation Steps ###
 - Check the data is coming into Splunk
-- Using Ingest Processor we will route it away from Splunk DDAS to Machine Data Lake (MDL)
+- Create a Machine Data Lake raw table for ingestion of Linux_secure logs.
+- Route data away from DDAS into new MDL raw table. 
 - Validate the data is no longer going to DDAS and is indeed going to MDL
 - Lastly we will then promote a small set of data back into DDAS again.
-
   
 ---
 
