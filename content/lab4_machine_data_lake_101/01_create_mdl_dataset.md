@@ -60,31 +60,95 @@ See example filled out MDL dataset definition:
 On the next screen you can get granular around who has access to perform actions on the dataset. For simplicity we are just going to allow access to Admin for this lab but you can find more information on setting user permissions on MDL <a>[HERE](https://help.splunk.com/en/data-management/onboard-data-to-splunk-cloud-platform/land-data-in-machine-data-lake/1.0/prepare-for-onboarding/access-control-roles-and-capabilities)</a>
 
 12. On the configure permissions screen, `click the dropdown and select the Admin role.`
+13. Next to the role. `Click the + button next to admin.` See example below
 
->[!NOTE]
->You will have to click away to close the drop down again. 
+![image_tag](/static/lab4/select-plus-admin-role.png)
 
-See example below of admin role selected:
+14. From the drop down `select the Streaming promote, static promote, query and view option.` See example below
 
-![image_tag](/static/lab4/admin-role-selected-user-permissions-mdl-dataset.png)
+![image_tag](/static/lab4/streaming-promote-option-selected.png)
+
+Once selected your screen should look like this:
+
+![image_tag](/static/lab4/final-role-selection-mdl-setup.png)
 
 13. `Click Next` when ready. 
 
->[!IMPORTANT]
-> Machine Data Lake has quite a few ways you can ingest data into it. Some of these can be automatically pushes of data, eg HEC and some are manually triggered pushes as part of an ingest processor pipe as an example. For our lab we wil use ingest processor to intercept and route data to our new dataset. So we can ignore this section of the dataset creation process. 
+This screen looks just like a ingest processor pipeline wizard. Well it probably is. But anyway. This is where we can select how the MDL will process the data coming in and select which data lands in the machine data lake raw table we are creating. 
 
+14. `Click the partition by sourcetype` option. 
 
-14. Leave the define data landing page and `Click next` to continue. 
+15. `Copy and paste the below into the Value field`
 
-15. Review the summary screen and `click Create Dataset` when ready. 
+```
+linux_secure
+```
+
+16. `Click Apply when ready`
+
+Your process_data section should look like this: 
+
+![image_tag](/static/lab4/mdl-process-data-by-sourcetype.png)
+
+17. `Click next when ready`
+
+17. Review the summary screen and `click Create Dataset` when ready. 
 
 Once created you should now see your new MDL dataset in the list. See example below:
 
 ![image_tag](/static/lab4/new-mdl-dataset-created.png)
 
-Nice work! We now have our new MDL dataset. In the next section we will go to Ingest Processor and route our data to it. 
+Nice work! Now we can check if data is flowing into it!
 
-### Click <a>[next](/content/lab4_machine_data_lake_101/02_setup_ingest_processor_route_mdl.md)</a> to continue on with lab. 
+### Validate Data is flowing into MDL ###
+
+1. From your Splunk Cloud console. `Click Cog icon near the top right-hand side`. 
+
+2. From there `select Catalog` option. This should be under the section called Knowledge. 
+
+This is our new Catalog service inside of Splunk. From here you can see all of the different indexes and machine data lake catalogs. We should be able to see our new linux_secure_mdl RAW table in the list. See example below: 
+
+![image_tag](/static/lab4/splunk-catalog-screen.png)
+
+3. `Select the new linux_secure_mdl table` from the list. 
+
+Now we should see a summary of our new MDL table. See example summary below: 
+
+![image_tag](/static/lab4/mdl-table-summary-catalog.png)
+
+>[!NOTE]
+>Clicking view details here will take you to the section where you can get more information on the configured table and edit it as well. But let's stay focused for now. 
+
+4. `Click the blue search button` to open up the search page for the MDL table. 
+
+You will see a promotion warning appear. See example below: 
+
+![image_tag](/static/lab4/expensive-search-warning.png)
+
+5. `Click the blue search button` on the warning screen to proceed. 
+
+By default the search will already appear as a SPL2 query with a limit of 10 results. You should see some results from our recently created MDL table. See example below: 
+
+![image_tag](/static/lab4/mdl-search-result-linux-secure.png)
+
+>[!IMPORTANT]
+>As we have configured the MDL table to route all data matching linux_secure sourcetype, this will mean that we are only sending data to MDL raw now in our new table. 
+
+Let's verify we no longer are seeing linux_secure coming into our DDAS storage. 
+
+6. `From a new tab open up the Splunk search bar again.` You can do this by clicking the Splunk cloud logo on the top right-hand side and selecting the Search & Reporting app. 
+7. `Run the following SPL search` against our original linux_secure index. 
+
+```
+index=linux_secure earliest=-2m
+```
+
+>[!NOTE]
+>You will notice we used the earliest=-2m command again to quickly check no new data is coming in. 
+
+We have now configured the MDL table to take all of the linux secure data and we don't have to worry about it going to DDAS anymore. But what if we wanted to promote a set of that data back to DDAS? Well that is the next part of the lab. 
+
+### Click <a>[next](/content/lab4_machine_data_lake_101/02_promote_data_mdl.md)</a> to continue on with lab. 
 
 
 
