@@ -1,16 +1,16 @@
-## Section Two: Routing Data to Machine Data Lake from Ingest Processor
+## Section Two: Promoting Data with Machine Data Lake
 
-Now we have a new MDL dataset, let's route our linux_secure data to it.
+Now we have routed some data to Splunk's Machine Data Lake we are helping to optimise the team at imnotbiased.com data to match performance vs price. In this next section we are going to show you how you can easily promote a subset of data to DDAS for queries which need the extra performance and analytics capabilities. 
 
-### Ingest Processor Machine Data Lake Destination ###
+### Promoting Data in Machine Data Lake ###
 
-1. From our Splunk SCS tenant `select the Splunk logo`, top left-hand side. 
-2. `Select the pipelines` option left-hand side.
+>![NOTE]
+>Last time we showed you how to connect to the Splunk catalog service via the menu option. This time we will show you via the shortcut on the main Splunk Cloud screen. 
 
-We will see our two applied pipelines here for cisco_asa and cc_trans data. See example below:
+1. From our Splunk Cloud console. `Click the catalog icon` near the top-left hand side. See example below 
 
-![image_tag](/static/lab4/current-two-pipelines.png)
+![image_tag](/static/lab4/catalog-shortcut-button.png)
 
-3. From here `click +New Pipeline, followed by Ingest Processor pipeline`
+2. Like before, `select our linux_secure_mdl catalog.` See example below
 
-4. 
+![image_tag](/static/lab4/mdl-table-summary-catalog.png)
