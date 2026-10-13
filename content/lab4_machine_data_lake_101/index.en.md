@@ -18,4 +18,4 @@ In this lab we will route some data from DDAS to Machine Datalake Raw table. Onc
 
 Ok, let's do this! 
 
-### Click  <a>[next](/content/lab4_machine_data_lake_101/01_route_data_to_mdl_from_ingest_processor.md)</a> to start the lab 
+### Click  <a>[next](/content/lab4_machine_data_lake_101/01_create_mdl_dataset.md)</a> to start the lab 
