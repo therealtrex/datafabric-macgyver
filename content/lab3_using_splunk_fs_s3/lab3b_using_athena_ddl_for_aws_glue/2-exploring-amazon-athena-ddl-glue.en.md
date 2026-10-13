@@ -27,7 +27,7 @@ In this section of lesson two we will have a look at Amazon Athena and its power
 <p>4. Once selected, **click the Choose button.**</p>
 <p>5. Leave all remaining settings and **click Save**</p>
 <p></p>
-<p> ![Athena Query Result Bucket Settings with the location of the query result in S3](/static/lab3/3b/athena-query-result-bucket-settings.png)</p>
+<p><img src="/static/lab3/3b/athena-query-result-bucket-settings.png" alt="Alt text"/></p>
 <p></p>
 <p>6. You should be prompted with Settings successfully updated green box. You will note you are in the Settings tab now. **Click Editor Tab** to go back to the query editor section of Athena.</p>
 <p></p>
