@@ -1,6 +1,6 @@
-## Section One: Routing Data to Splunk Machine Data Lake from Ingest Processor
+## Section One: Creating our first MDL table
 
-Section one of Lab 4 is configuring our Ingest Processor to intercept web access log data currently going to our Splunk DDAS high performance storage and route it to Splunk Machine Data Lake instead. 
+In section one we are going to validate the data and then create our first MDL table which we can configure to intercept logs coming into DDAS as required. 
 
 ### Validating the problem ###
 
