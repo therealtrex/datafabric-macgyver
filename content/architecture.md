@@ -42,7 +42,7 @@ In this lab we will show you how to configure the Federated Search for Amazon S3
 ## Lab 4: Machine Data Lake searching and promotion ##
 Not all data is equal. A bunch of web access logs are coming into the Splunk platform and the team does not want to store these in the speedy Splunk dynamic data active search (DDAS) tier. They heard about Splunk's new Machine Data lake which is a super low cost storage capability which allows you to dump data in, search it then when/if you choose, promote it to a more performant tier like Analytics table or DDAS. 
 
-In this lab we will route some data from DDAS to Machine Datalake Raw table. One there we will search it and then run a promotion of some of it back into DDAS showing the flexibility of the platform. 
+In this lab we will route some data from DDAS to Machine Datalake Raw table. Once there we will search it and then run a promotion of some of it back into DDAS showing the flexibility of the platform. 
 
 ##  Lab 5: Linux Secure logs routing ##
 The team wants to find a new home for the linux_secure logs. They aren't being searched very much but the audit team thinks they are a potential future AI agent training data source. 
