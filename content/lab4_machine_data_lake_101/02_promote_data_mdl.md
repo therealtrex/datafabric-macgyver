@@ -4,7 +4,7 @@ Now we have routed some data to Splunk's Machine Data Lake we are helping to opt
 
 ### Promoting Data in Machine Data Lake ###
 
->![NOTE]
+>[!NOTE]
 >Last time we showed you how to connect to the Splunk catalog service via the menu option. This time we will show you via the shortcut on the main Splunk Cloud screen. 
 
 1. From our Splunk Cloud console. `Click the catalog icon` near the top-left hand side. See example below 
@@ -23,11 +23,10 @@ From here a promote wizard should open, see example below:
 
 ![image_tag](/static/lab4/mdl-promote-wizard-overview.png)
 
-From here we have three main options. See details below
-
-**Static Splunk index:** This is used to promote data into DDAS (tsidx) format. 
-**Static analytics table:** This is used to promote ata into the Machine Data Lake Analytics Table 
-**Streaming Splunk index:** This is used to send a stream of data from MDL into Splunk DDAS as it arrives in MDL. 
+From here we have three main options:
+- **Static Splunk index:** This is used to promote data into DDAS (tsidx) format. 
+- **Static analytics table:** This is used to promote ata into the Machine Data Lake Analytics Table 
+- **Streaming Splunk index:** This is used to send a stream of data from MDL into Splunk DDAS as it arrives in MDL. 
 
 More information on these can be found <a>[here](https://help.splunk.com/en/splunk-cloud-platform/land-data-in-machine-data-lake/1.0/promote-data)</a>
 
