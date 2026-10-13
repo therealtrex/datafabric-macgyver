@@ -250,4 +250,4 @@ index=aws_waf_logs | head 100
 
 That is the end of this double-click into Federated Search for Amazon S3. 
 
-### Click <a>[next](/content/lab3_using_splunk_fs_s3/lab3c_spunk_managed_catalog/2-configuring-aws-waf-federated-dataset.en.md)</a> to move into the next lab! 
+### Click <a>[next](/content/lab4_machine_data_lake_101/index.en.md)</a> to move into the next lab! 
