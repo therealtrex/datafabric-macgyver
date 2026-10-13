@@ -17,7 +17,7 @@ index="linux_secure"
 
 See example output below. 
 
-![image_tag](/static/lab2/linux_secure_confirmed_ddas.png)
+![image_tag](/static/lab4/linux_secure_confirmed_ddas.png)
 
 Now that we have confirmed that. Let's create a MDL raw storage destination to route our data to. 
 
@@ -34,7 +34,7 @@ Now that we have confirmed that. Let's create a MDL raw storage destination to r
 
 Like before there are lots of options here. `Select the Machine Data Lake (MDL) option.` See example below
 
-![image_tag](/static/lab2/select-mdl-dataset-option.png)
+![image_tag](/static/lab4/select-mdl-dataset-option.png)
 
 9. `Click Next` when ready. 
 
@@ -50,7 +50,7 @@ Like before there are lots of options here. `Select the Machine Data Lake (MDL) 
 
 See example filled out MDL dataset definition:
 
-![image_tag](/static/lab2/mdl-define-dataset-filled-in.png)
+![image_tag](/static/lab4/mdl-define-dataset-filled-in.png)
 
 >[!NOTE]
 >We covered off quote a few options there, we don't have time to go through which options we chose for what reason but all the information you need can be found <a>[HERE](https://help.splunk.com/en/data-management/onboard-data-to-splunk-cloud-platform/land-data-in-machine-data-lake/1.0/land-and-verify-data/create-a-machine-data-lake-raw-table)</a>
@@ -66,7 +66,7 @@ On the next screen you can get granular around who has access to perform actions
 
 See example below of admin role selected:
 
-![image_tag](/static/lab2/admin-role-selected-user-permissions-mdl-dataset.png)
+![image_tag](/static/lab4/admin-role-selected-user-permissions-mdl-dataset.png)
 
 13. `Click Next` when ready. 
 
@@ -80,7 +80,7 @@ See example below of admin role selected:
 
 Once created you should now see your new MDL dataset in the list. See example below:
 
-![image_tag](/static/lab2/new-mdl-dataset-created.png)
+![image_tag](/static/lab4/new-mdl-dataset-created.png)
 
 Nice work! We now have our new MDL dataset. In the next section we will go to Ingest Processor and route our data to it. 
 
