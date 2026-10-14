@@ -123,7 +123,7 @@ From here a new tab will open and automatically search our data. Before you even
 
 That is it! Congratulations we just promoted some data from a Machine Datalake Raw table into Splunk DDAS index for searching. How easy was that! That is it for this lab. Its time to move onto the next lab. 
 
-### Click <a>[next](/content/lab5_machine_data_lake_ingest/index.en.md)</a> to move onto next lab. 
+### Click <a>[next](/content/lab5_machine_data_lake_ingestion/index.en.md)</a> to move onto next lab. 
 
 
 
