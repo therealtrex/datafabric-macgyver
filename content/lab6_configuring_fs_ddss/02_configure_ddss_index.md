@@ -14,29 +14,33 @@ In this final part of our workshop we will edit the PII index for our Credit Car
 
 ![image_tag](/static/lab6/select-pii-index.png)
 
-4. `Click the drop down where it says additional storage.`
+4. `Modify the Max raw data size to be 100MB (**NOT**GB!)`
 
-5. `Select Dynamic Data Self-Storage (DDSS)` option as shown below:
+5. `Click the drop down where it says additional storage.`
+
+6. `Select Dynamic Data Self-Storage (DDSS)` option as shown below:
 
 ![image_tag](/static/lab6/select-ddss-optoin-index.png)
 
-6. `Leave searchable days as 100`
+7. `Change searchable days as 1`
 
-7. `Click the drop down under Self-storage location and select our new self storage location we created earlier.` See example below:
+8. `Click the drop down under Self-storage location and select our new self storage location we created earlier.` See example below:
 
 ![image_tag](/static/lab6/ddss-archive-location-selected-on-index.png)
 
-8. `Click Save when done.`
+9. `Click Save when done.`
 
-9. `Click continue if prompted for updating index.`
+10. `Click continue if prompted for updating index.`
 
 We should now see on the right hand side of our index the DDSS setup location showing. See example below:
 
 ![image_tag](/static/lab6/ddss-location-setup-on-index-final-screen.png)
 
+Just as a summary. We modified the index to route data to Splunk DDSS in Amazon S3 when it hits 100MB or 1 Day old. These are the smallest numbers Splunk will allow. 
+
 <br>
 
 >[!IMPORTANT]
->Unfortunately we cannot show you anymore form here as the minimum we can set for the DDSS archival process to work is 1 day retention. Seel free to set this yourself if you have time left in the lab and check it the following day. 
+>Unfortunately we cannot show you the live feed of archive working as we will have to wait a day for it to archive off. Feel free to set a reminder in your diary to check in around 24 hours. The labs usually last another 1 to 2 days after the workshop. 
 
-That is it! That is all the labs. I hope you enjoyed the labs we put together and learn a lot. Have a great day. 
+That is it! You have completed all of the labs. I hope you enjoyed your experience in getting your hands dirty with Cisco Data Fabric. Have a great day. 
