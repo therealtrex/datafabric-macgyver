@@ -14,4 +14,4 @@ In this final lab we will show you how you can create a connection to an Amazon 
 
 We are almost there! 
 
-### Click  <a>[next](/content/Lab6_configuring_fs_ddss/01_setup_ddss_connection_amazon_s3.md)</a> to start the lab 
+### Click  <a>[next](/content/lab6_configuring_fs_ddss/01_setup_ddss_connection_amazon_s3.md)</a> to start the lab 
