@@ -182,9 +182,11 @@ Next let's validate data is going into our new MDL catalog for access_combined.
 
 6. `Click the search button` again, followed by the `search button again on the warning screen.`
 
-If all went to plan you should now see data coming into the 
+If all went to plan you should now see data coming into the catalog we created! 
 
-### Click <a>[next](/content/lab4_machine_data_lake_101/02_promote_data_mdl.md)</a> to continue on with lab. 
+Congratulations, that wraps up Lab 5! Now onto our last lab which we look at configuring a Dynamic Data Self Storage archive index using Amazon S3. 
+
+### Click <a>[next](/content/lab6_configuring_fs_ddss/index.en.md)</a> to start the next lab on with lab. 
 
 
 
