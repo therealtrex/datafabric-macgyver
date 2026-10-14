@@ -1,7 +1,9 @@
 # Machine Data Lake Ingestion Capabilities
 
 ## Scenario Overview ##
+
 Now we have explored Machine Data Lake a little we wanted to look at a new use case from imnotbiased.com which is routing the access_combined logs into machine data lake. This time we will show them a new technique to ingest the logs straight into MDL. 
+
 ---
 
 ### Implementation Steps ###
