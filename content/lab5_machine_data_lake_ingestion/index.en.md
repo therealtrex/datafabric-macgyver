@@ -5,6 +5,7 @@ Now we have explored Machine Data Lake a little we wanted to look at a new use c
 ---
 
 ### Implementation Steps ###
+
 - Check the access_combined is coming into Splunk
 - Create a second MDL raw table for access_combined
 - look at new method for ingesting straight into MDL
