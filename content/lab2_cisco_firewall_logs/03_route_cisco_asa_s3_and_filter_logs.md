@@ -293,7 +293,7 @@ Once the new pipeline is deployed go back to your Splunk tab we had open earlier
 
 10. From your Splunk screen `run the search below.` See example below: 
 
-
+```
 index=cisco-asa-logs ("Built inbound" OR "Teardown" OR "Disallowing new connections") earliest=-2m
 | eval message_type=case(
     match(_raw, "(?i)Built inbound TCP connection"), "TCP Built",
@@ -307,6 +307,7 @@ index=cisco-asa-logs ("Built inbound" OR "Teardown" OR "Disallowing new connecti
 | stats count, earliest(_time) as first_seen, latest(_time) as last_seen by message_type
 | convert ctime(first_seen) ctime(last_seen)
 | sort - count
+```
 
 ![image_tag](/static/lab2/post-cisco-asa-drop-2-mins.png)
 
