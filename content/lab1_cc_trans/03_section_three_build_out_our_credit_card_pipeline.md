@@ -179,7 +179,7 @@ Now we are happy, let’s save our pipeline and apply it.
 7.	Copy and paste the name below into the pipeline name section. Adding an additional description if you like. See example below:
 
 ```
-split_mask_filter_pii_cc_trans. 
+split_mask_filter_pii_cc_trans
 ```
 
 ![image_tag](/static/lab1/saving_cc_trans_pipeline.png)
