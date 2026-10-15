@@ -1,4 +1,4 @@
-# Cisco Data Fabric MacGyver Lab3: Splunk's Federated Search for Amazon S3 Service
+# Splunk's Federated Search for Amazon S3 Service
 
 ## Scenario Overview ##
 One of the goals of the `imnotbiased.com` team is to be able to access large volumes of data periodically for random use cases. Currently all of their large volumes of data reside in Amazon S3. For this use case we will dive into the Splunk service called Federated Search for Amazon S3. Over the next 3 parts of this lab we will take you through the understanding and basics of how Federated Search for Amazon S3 works in using different supported methods and capabilities. 
