@@ -101,7 +101,8 @@ TBLPROPERTIES (
 )
 
 ```
-11. Scroll down the bottom of the DDL and `fill out the location section labelled \<S3 URI\>` using the S3 URI we copied earlier. Pay careful attention to the format when copying it. 
+
+11. Scroll down the bottom of the DDL and `fill out the location section labelled <S3 URI>` using the S3 URI we copied earlier. Pay careful attention to the format when copying it. 
 - eg s3://splunk-fs-s3-logs-{account-id}-{region}/AWSLogs/aws-account-id={account-id}/aws-service=vpcflowlogs/
 
 12. Feel free to explore the DDL code, you will note right at the top is the name of the new table we are creating. When ready, `click the Run button.`
