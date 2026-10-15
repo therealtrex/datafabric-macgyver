@@ -71,31 +71,29 @@ From here you will see the network layout of the VPC. This is a handy tool to ch
 
 So let's create an EC2 instance now and make sure it's in that VPC, so we can generate some VPC Flow logs!
 
+## Creating an EC2 Instance ##
+
 >[!NOTE]
 >If you are part of an instructor led lab we will cover off some more details about Apache Hive format which uses key=value pair folder structure. This method is generally the easiest way to optimise your searches. More on that later. AWS has some good documentation on this **[here.](https://docs.aws.amazon.com/athena/latest/ug/partitions.html)**
 
 
-18. From your AWS console, `search for and select ec2.`
+1. From your AWS console, `search for and select ec2.`
 
 ![Select EC2 Service from the AWS console ](/static/lab3/3b/select-ec2-service.png)
 
-19. You will note there are no instances currently in your environment. `Click the Launch instance button` in the middle left-hand side of the screen.
+2. You will note there are no instances currently in your environment. `Click the Launch instance button` in the middle left-hand side of the screen.
 
 >[!NOTE]
 >This next section is broken down into multiple steps for creating an ec2. Pay close attention to the steps and screenshots.
 
-
-## Creating an EC2 Instance ##
-
-
-1. EC2 basic details. Fill in the below. See screenshot with example.
+3. EC2 basic details. Fill in the below. See screenshot with example.
 - **Name:** Name your ec2. e.g. mr-ec2
 - **Application and OS Images:** Leave as Amazon Linux.
 - **Instance type:** Leave as t2.micro.
 
 ![Enter the EC2 Service Name and Machine Type into the fields](/static/lab3/3b/ec2-machne-type-and-name.png)
 
-2. Time to create an EC2 key pair and select it. From the Key pair section. Do the following:
+4. Time to create an EC2 key pair and select it. From the Key pair section. Do the following:
 - Next to the Key pair name-drop down, `Click Create new key pair`
     - **Key Pair Name:** Give your keypair a name eg mr-key-pair
     - **Private Key file Format:** Select format you prefer eg Putty or OpenSSH. 
@@ -115,11 +113,11 @@ So let's create an EC2 instance now and make sure it's in that VPC, so we can ge
 >When you create the key pair you should have seen this download to your computer. Make sure you pay attention to where it went, you may need it later!
 
 
-3. You can leave all remaining defaults and `click the Launch Instance` button to the right hand side. 
+5. You can leave all remaining defaults and `click the Launch Instance` button to the right hand side. 
 
 ![EC2 Summary of the settings you have just configured](/static/lab3/3b/launch-ec2-instance.png)
 
-4. If all things went well you should see a green box saying, **Success**. You will see a **instance ID hyperlink in the green box. Click this now.**
+6. If all things went well you should see a green box saying, **Success**. You will see a **instance ID hyperlink in the green box. Click this now.**
 
 ![EC2 Instance Hyperlink is shown in a green banner](/static/lab3/3b/ec2-instance-hyperlink.png)
 
