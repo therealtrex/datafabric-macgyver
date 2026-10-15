@@ -8,7 +8,9 @@ Lets validate!
 
 ### Validate pipeline in Splunk ###
 
-1.	From our splunk console. `Set the Time range from last 15 minutes` and `paste the following code in` and run the search to check our cc_trans_im index data has changed. See example result below:
+1. From our splunk console. `Click the Splunk Cloud logo`
+2. `Select search & reporting app,` on the left-hand side
+3. `Set the Time range from last 15 minutes` and `paste the following code in` and run the search to check our cc_trans_im index data has changed. See example result below:
 
 ```
 index="cc_trans_im"
