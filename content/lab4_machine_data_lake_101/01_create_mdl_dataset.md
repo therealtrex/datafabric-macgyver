@@ -134,7 +134,7 @@ By default the search will already appear as a SPL2 query with a limit of 10 res
 
 Let's verify we no longer are seeing linux_secure coming into our DDAS storage. 
 
-6. `From a new tab open up the Splunk search bar again.` You can do this by clicking the Splunk cloud logo on the top right-hand side and selecting the Search & Reporting app. 
+6. `From a new tab open up the Splunk search bar again.` You can do this by clicking the Splunk cloud logo on the top left-hand side and selecting the Search & Reporting app. 
 7. `Run the following SPL search` against our original linux_secure index. 
 
 ```
