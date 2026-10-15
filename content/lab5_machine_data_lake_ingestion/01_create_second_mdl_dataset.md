@@ -179,6 +179,14 @@ Next let's validate data is going into our new MDL catalog for access_combined.
 
 If all went to plan you should now see data coming into the catalog we created! 
 
+>[!NOTE]
+> The data may take around 100 minutes to appear in the data catalog
+
+See example of data below:
+
+![image_tag](/static/lab5/access-combined-data-coming-in.png)
+
+
 Congratulations, that wraps up Lab 5! Now onto our last lab which we look at configuring a Dynamic Data Self Storage archive index using Amazon S3. 
 
 ### Click <a>[next](/content/lab6_configuring_fs_ddss/index.en.md)</a> to start the next lab on with lab. 
