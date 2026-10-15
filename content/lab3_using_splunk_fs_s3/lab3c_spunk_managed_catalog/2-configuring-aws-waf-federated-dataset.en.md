@@ -9,7 +9,7 @@ Like before this will be a combination of jumping back and forth between Splunk 
 
 2. From here we should be taken into the Data Management App. `Click datasets` on the left hand side. 
 
-3. If you have completed everything you  should see two datasets for cloudfront_access_logs and VPC flow logs. `Click Create Dataset` on the right hand side to create a new dataset. 
+3. `Click Create Dataset` on the right hand side to create a new dataset. 
 
 4. Like before we need to `Select Amazon S3 and Click Next`
 
@@ -225,15 +225,15 @@ Leave settings for number of files to scan
 ## Testing out new AWS WAF Log Federated Dataset ##
 
 Its time now to run a Splunk search against our new VPC Flow log Federated Dataset. 
-1. From the Splunk console. **Click the 9 set of square dots on the top right hand side, followed by the Search & Reporting link**. See example below 
+1. From the Splunk console. `Click the 9 set of square dots on the top right hand side, followed by the Search & Reporting link`. See example below 
 
 ![Select search and reporting in Splunk](/static/lab3/3c/select-search-and-reporting.png)
 
-2. From the search bar, **select the SPL drop down and choose the SPL2 option** as shown in picture below:
+2. From the search bar, `select the SPL drop down and choose the SPL2 option` as shown in picture below:
 
 ![Select SPL2 from Search bar](/static/lab3/3c/select-spl2.png)
 
-3. Using the code below, **copy and paste into the search bar.** You may need to adjust the time settings to something larger. e.g. All time. 
+3. Using the code below, `copy and paste into the search bar.` You may need to adjust the time settings to something larger. e.g. All time. 
 
 >[!WARNING]
 >You will probably see an error saying Error in 'FasQueryProcessor': Dataset is still being created: Schema inference status: PROCESSING.
