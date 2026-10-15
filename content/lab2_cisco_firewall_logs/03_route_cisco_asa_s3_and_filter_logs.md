@@ -338,8 +338,18 @@ A screen will appear showing metrics from the last 30 minutes or so. Have a look
 
 See examples of both below:
 
-** Cisco ASA S3 Log Metrics                                            Cisco ASA Splunk Indexer Metrics
-![image_tag](/static/lab2/cisco_asa_data_s3_logs_metrics.png)          ![image_tag](/static/lab2/cisco_asa_data_splunk_indexer_metrics.png)
+**Cisco ASA S3 Log Metrics**
+
+<br>
+
+![image_tag](/static/lab2/cisco_asa_data_s3_logs_metrics.png)          
+
+
+**Cisco ASA Splunk Indexer Metrics**
+
+<br>
+
+![image_tag](/static/lab2/cisco_asa_data_splunk_indexer_metrics.png)
 
 
 Congratulations. That is the end of Lab 2. Modifying our Cisco ASA log requirements. Our next challenge the imnotbiased.com team want's us to solve is using Splunk Federated Search for Amazon S3 to search their vast amounts of S3 storage logs. 
