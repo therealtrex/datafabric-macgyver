@@ -1,24 +1,26 @@
 Now we have been through the basics of CloudFront Access logs and Amazon Glue tables it is now time to see how these come together with Splunk to build out our first Federated Search!
 
-## Creating a Splunk Amazon S3 Connection ##
+<!--Removing below as its a double up from earlier labs-->
+
+<!--## Creating a Splunk Amazon S3 Connection ##
 
 >[!NOTE]
 >For this part of your lab you will need your Splunk Instance provided as part of your workshop or an instance of Splunk which you are using that has Federated Search for Amazon S3 feature enabled.
 
 
-1. First we need to go to the **Data Management** app in Splunk. **Select the Data Management** app located on the left hand menu in Splunk. See example image below.
+1. First we need to go to the **Data Management** app in Splunk. `Select the Data Management` app located on the left hand menu in Splunk. See example image below.
 
 ![Selecting Data Management App](/static/lab3/3a/selecting-data-management-app-in-splunk.png)
 
-2. You should now be on the Data Management page. There is a lot to take in here but for now let's just dive straight in. **Click Connections** on the left hand menu. See example below 
+2. You should now be on the Data Management page. There is a lot to take in here but for now let's just dive straight in. `Click Connections` on the left hand menu. See example below 
 
 ![Select Data Management Connections](/static/lab3/3a/select-data-management-connections.png)
 
-3. From here we will need to create a new connection. **Select the blue Create connection** button located on the right hand side. See example below. 
+3. From here we will need to create a new connection. `Select the blue Create connection` button located on the right hand side. See example below. 
 
 ![Select Create Connections Button](/static/lab3/3a/select-create-connection-button.png)
 
-4. From here we need to select **Amazon S3** radio button followed by **Next**
+4. From here we need to select `Amazon S3` radio button followed by `Next`
 
 ![Select Amazon S3 Provider Radio button and press next](/static/lab3/3a/select-federated-s3-provider-radio.png)
 
@@ -119,6 +121,7 @@ The AWS Account ID has a **copy** button. This should be used to copy the accoun
 ![Created connection](/static/lab3/3a/connection-created.png)
 
 
+-->
 ## Creating CloudFront Dataset ##
 
 Now we have created a connection, we need to create our first dataset for CloudFront Access logs. 
