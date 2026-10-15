@@ -68,9 +68,7 @@ Because of the flow of data we want to start with the splunk_indexer as the defa
 
 You should now see a default blank pipeline ready to go! Hopefully by now you are getting a grip on what is what and what will happen if we apply it now? 
 
-Well spoiler alert. it will route the entire feed to Amazon S3 removing it from Splunk all together! 
-
-That's not quite what we want. So let's just initially clone it into two. One for S3 and one for Splunk still. 
+Let's mow create a clone of our data source to S3. 
 
 ### Cloning Cisco ASA logs into Amazon S3 destination and Splunk ###
 
