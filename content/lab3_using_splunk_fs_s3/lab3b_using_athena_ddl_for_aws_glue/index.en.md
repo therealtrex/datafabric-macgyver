@@ -10,7 +10,7 @@ After this lesson you will get an understanding of the following:
 
 3. **Take a look at Amazon Athena**: Learn how Amazon Athena help with creating / modify AWS Glue Tables as well as help run queries also against S3. This can help debug and test out things before running them in Splunk.
 
-4. **Add a second Federated Dataset**: We will create another federated dataset in Splunk.
+4. **Add a new Federated Dataset**: We will create another federated dataset in Splunk.
 
 Below is overview of the architectural pieces we will be reviewing in this lesson.
 
