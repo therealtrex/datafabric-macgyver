@@ -3,45 +3,49 @@ For the final time now we are going to configure a Splunk Federated Dataset. Thi
 ## Setting up AWS WAF Federated Dataset in Splunk ##
 Like before this will be a combination of jumping back and forth between Splunk and AWS. 
 
-1. **Login to your Splunk instance if it has expired** and navigate to the Data Management app located on the left hand menu. See example below:
+1. `Login to your Splunk instance if it has expired` and navigate to the Data Management app located on the left hand menu. See example below:
 
 ![Select Data Management App Splunk Cloud](/static/lab3/3c/selecting-data-management-app-in-splunk.png)
 
-2. From here we should be taken into the Data Management App. **Click datasets** on the left hand side. 
+2. From here we should be taken into the Data Management App. `Click datasets` on the left hand side. 
 
-3. If you have completed everything you  should see two datasets for cloudfront_access_logs and VPC flow logs. **Click Create Dataset** on the right hand side to create a new dataset. 
+3. If you have completed everything you  should see two datasets for cloudfront_access_logs and VPC flow logs. `Click Create Dataset` on the right hand side to create a new dataset. 
 
-4. Like before we need to **Select Amazon S3 and Click Next**
+4. Like before we need to `Select Amazon S3 and Click Next`
 
-5. **Select the existing connection** from the drop down. **Click Next** when ready. 
+5. `Select the existing connection` from the drop down. `Click Next` when ready. 
 
-6. **Name your dataset** eg aws_waf_logs
+6. Copy and paste below and enter into the Dataset Name field
+
+```
+aws_waf_logs
+```
 
 We now need to get our AWS WAF Logs S3 location. 
 
-7. From your AWS console **go into S3 again.**
+7. From your AWS console `go into S3 again.`
 
-8. **Select the AWS WAF Logs S3 bucket** from the list. It should be named aws-waf-logs-splunk-{account id}-{region}
+8. `Select the AWS WAF Logs S3 bucket` from the list. It should be named aws-waf-logs-splunk-{account id}-{region}
 
-10. **Select into the folders until you get to the splunk-fs-s3-workshop-webacl folder.** 
+10. `Select into the folders until you get to the splunk-fs-s3-workshop-webacl folder.` 
 
-11. **Tick the box next to the folder for the web acl** and **select the blue Copy S3 URI button**. See example below: 
+11. `Tick the box next to the folder for the web acl` and `select the blue Copy S3 URI button`. See example below: 
 
 ![Select AWS WAF S3 URI](/static/lab3/3c/copy-aws-waf-s3-url.png)
 
-12. Back on our Splunk create dataset page. **Paste in the AWS WAF URI we copied.** 
+12. Back on our Splunk create dataset page. `Paste in the AWS WAF URI we copied.` 
 
-13. **Select the Federated Search radio button.**
+13. `Select the Federated Search radio button.`
 
 See example below for filled out fields. 
 
 ![Page one AWS WAF Create Dataset screen](/static/lab3/3c/filled-out-aws-waf-create-dataset-page1.png)
 
-14. **Click Next** when ready. 
+14. `Click Next` when ready. 
 
-15. This time we will **select I don't have a catalog**
+15. This time we will `select I don't have a catalog`
 
-16. A dropdown will appear asking which format the data is in. **Select JSON** and **Gzip for compress type**, see example below:
+16. A dropdown will appear asking which format the data is in. `Select JSON` and `Gzip for compress type`, see example below:
 
 ![Screen two no catalog setting](/static/lab3/3c/screen2-configure-dataset-nocatalog.png)
 
@@ -54,21 +58,21 @@ This will open up a lot more options for you to now fill in.
 ## Configure SQS and S3 Notification in Amazon ##
 As described above, in this part of the lesson we will configure an AWS SQS queue and S3 notification to tell Splunk when we would like to update the Splunk managed catalog. 
 
-1. From the AWS console. **Search for and select SQS**
+1. From the AWS console. `Search for and select SQS`
 
 ![Select SQS](/static/lab3/3c/select-sqs.png)
 
 You should see there is already one SQS queue created for us as part of the lesson. Eg splunk-fs-s3-{account-id}
 
-2. From the list of SQS queue **click on the splunk-fs-s3-{account-id} queue.** See example below: 
+2. From the list of SQS queue `click on the splunk-fs-s3-{account-id} queue.` See example below: 
 
 ![Select SQS Queue](/static/lab3/3c/select-sqs-queue.png)
 
-3. **Click the copy blue button next to SQS ARN and paste this somewhere to use later on.** See example below:
+3. `Click the copy blue button next to SQS ARN and paste this somewhere to use later on.` See example below:
 
 ![Copy SQS Queue ARN](/static/lab3/3c/copy-sqs-arn.png)
 
-4. **In the Access policy box. Click Edit.** See example below: 
+4. `In the Access policy box. Click Edit.` See example below: 
 
 5. In the Access policy box, paste the following SQS access policy. 
 
@@ -94,15 +98,15 @@ You should see there is already one SQS queue created for us as part of the less
   ]
 }
 ```
-6. **Replace the section YOUR_SQS_QUEUE_ARN with the one copied earlier**
+6. `Replace the section YOUR_SQS_QUEUE_ARN with the one copied earlier`
 
-7. Where is says **YOUR_S3_BUCKET_NAME**, enter in your AWS WAF bucket name. Eg aws-waf-logs-splunk-{account-id}-{region}
+7. Where is says **YOUR_S3_BUCKET_NAME**, `enter in your AWS WAF bucket name.` Eg aws-waf-logs-splunk-{account-id}-{region}
 
 See example below of filled in sections.
 
 ![SQS Access Policy Done](/static/lab3/3c/sqs-access-policy-details.png)
 
-7. Scroll down to bottom leaving everything else as is and **click Save**
+7. Scroll down to bottom leaving everything else as is and `click Save`
 
 You should see a saved configuration green bar on the screen. See example below:
 
@@ -112,23 +116,27 @@ Now this is updated we need to now tell S3 to trigger a SQS notification when th
 
 ## Create S3 Notification ##
 
-1. From your AWS console, **search for and select Amazon S3.**
+1. From your AWS console, `search for and select Amazon S3.`
 
-2. **Select your AWS WAF Logs bucket from the list.** Eg aws-waf-logs-splunk-{account-id}-{region}
+2. `Select your AWS WAF Logs bucket from the list.` Eg aws-waf-logs-splunk-{account-id}-{region}
 
-3. **Select the Properties Tab.** See example below:
+3. `Select the Properties Tab.` See example below:
 
 ![Select properties tab S3 AWS WAF](/static/lab3/3c/select-properties-tab-s3-awswaf.png)
 
-4. **Scroll to the section which says Event notifications**
+4. `Scroll to the section which says Event notifications`
 
-5. **Click the button which says Create event notification**. See example below:
+5. `Click the button which says Create event notification`. See example below:
 
 ![Select Create Event notification on S3 properties](/static/lab3/3c/select-create-event-notification.png)
 
-6. **Enter in an event name**, eg aws-waf-s3-notification
+6. Copy and paste below into the Event Name field: 
 
-7. For the prefix **copy and paste the path below updating with your AWS Account ID.**
+```
+aws-waf-s3-notification
+```
+
+7. For the prefix `copy and paste the path below updating with your AWS Account ID.`
 
 ```S3Path
 AWSLogs/{account-id}/WAFLogs/cloudfront/splunk-fs-s3-workshop-webacl/
@@ -138,7 +146,7 @@ See example filled in below (note account id is blanked out below!):
 
 ![S3 notification settings filled in one](/static/lab3/3c/s3-notification-setting-filled-in-one.png)
 
-8. For event types **select the following options:**
+8. For event types `select the following options:`
 - All object create events
 - All object removal events
 - All restore object events
@@ -153,13 +161,13 @@ and
 
 ![S3 notification event types 2](/static/lab3/3c/s3-notification-event-types-2.png)
 
-9. **Scroll down to Destination section and select SQS queue radio button.**
+9. `Scroll down to Destination section and select SQS queue radio button.`
 
-10. **Select the SQS queue box and you should see our SQS queue in the list. Select this.** See example below: 
+10. `Select the SQS queue box and you should see our SQS queue in the list. Select this.` See example below: 
 
 ![Select SQS queue in S3 notification](/static/lab3/3c/select-sqs-queue-s3-notification.png)
 
-11. Leave other defaults and **Click Save Changes** when ready. 
+11. Leave other defaults and `Click Save Changes` when ready. 
 
 You should see a green successfully created event notification box. See example below:
 
@@ -168,11 +176,11 @@ You should see a green successfully created event notification box. See example 
 
 ## Continue on with Splunk Dataset Creation ##
 
-1. Back in our Splunk dataset creation screen in the section for Do you want to keep catalog in sync with dataset. **Paste in the SQS queue ARN we copied earlier.** See example below: 
+1. Back in our Splunk dataset creation screen in the section for Do you want to keep catalog in sync with dataset. `Paste in the SQS queue ARN we copied earlier.` See example below: 
 
 ![Paste in SQS ARN Splunk Dataset AWS WAF](/static/lab3/3c/paste-in-sqs-splunk-dataset-aws-waf.png)
 
-2. In the define schema section **select the option for Discover schema via crawler**
+2. In the define schema section `select the option for Discover schema via crawler`
 
 Leave settings for number of files to scan
 
@@ -183,7 +191,7 @@ Leave settings for number of files to scan
 
 ![Settings filled in Splunk dataset aws waf 1](/static/lab3/3c/create-splunk-dataset-aws-waf-time-settings-discover-via-crawler.png)
 
-4. Where it says Define partitions, are your partitions hive compatible, **select the option for No**
+4. Where it says Define partitions, are your partitions hive compatible, `select the option for No`
 
 5. Enter in the following partitions settings into the box. See example below: 
 - year: string
@@ -194,21 +202,21 @@ Leave settings for number of files to scan
 
 ![Enter in partition info AWS WAF Splunk Dataset](/static/lab3/3c/enter-in-partitions-splunk-dataset-aws-waf.png)
 
-6. Leave remaining defaults and **click Next when ready.** 
+6. Leave remaining defaults and `click Next when ready.` 
 
-7. **Select no for KMS keys** option. 
+7. `Select no for KMS keys` option. 
 
-17. **Click generate policies.** Please review the policies and make sure they make sense to you before moving on. 
+17. `Click generate policies.` Please review the policies and make sure they make sense to you before moving on. 
 
 >[!NOTE]
 >You should have noticed updated policies for the AWS WAF logs in the SQS settings and S3 bucket location. Normally these would need to be appended to the existing policies we used for Lesson One but the lab environment has used partial matches for its policies so we do not need to update them.  
 
 
-18. **Click Next** when ready
+18. `Click Next` when ready
 
-19. **Click confirm** to acknowledge policy warning 
+19. `Click confirm` to acknowledge policy warning 
 
-20. Review items and **click Create Dataset** when ready.
+20. Review items and `click Create Dataset` when ready.
 
 >[!NOTE]
 >A blue box should appear notifying us that the new dataset has been created and is ready to be searched. So let's go try that. Note, the new dataset may take a few minutes to be actually ready. But don't worry we point that out if you do try and search to quickly. 
