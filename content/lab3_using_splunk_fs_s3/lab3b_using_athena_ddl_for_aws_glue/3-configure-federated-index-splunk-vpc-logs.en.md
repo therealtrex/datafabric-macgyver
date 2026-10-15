@@ -44,6 +44,9 @@ vpc_flow_logs
 
 12. From the left-hand menu `select Tables.`
 
+>[!NOTE]
+>You may have to select the Splunk table from the choose database section on the next page.
+
 13. `Select the new table we created earlier e.g. splunk_vpc_flow_logs`
 
 From here you will note the key fields we will use in the next Splunk screen. 
