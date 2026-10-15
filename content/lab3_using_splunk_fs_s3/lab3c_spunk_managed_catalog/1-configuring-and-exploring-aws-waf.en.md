@@ -37,9 +37,7 @@ This will take you to the Resources and protection packs (web ACLs) page. Note t
 
 ![Select AWS WAF S3 log bucket](/static/lab3/3c/select-s3-aws-waf-logging.png)
 
-7. `Click Choose` to confirm.
-
-8. `Leave all other defaults` and `click Save` at the bottom of the page.
+7. `Leave all other defaults` and `click Save` at the bottom of the page.
 
 You should now see your Logging section showing a logging destination of S3 pointing at `aws-waf-logs-splunk-{account-id}-{region}`.
 
@@ -53,7 +51,8 @@ You should now see your Logging section showing a logging destination of S3 poin
 >It may take a few minutes for logs to start appearing. 
 
 
-2. Click the folders for your new S3 bucket until you see your first set of logs. e.g. AWSLogs/{Account ID}/WAFLogs/cloudfront/splunk-fs-s3-workshop-webacl/{year}/{month}/{day}/{hour}/{minute}. See example below.
+2. `Click the folders for your new S3 bucket until you see your first set of logs.` 
+- e.g. AWSLogs/{Account ID}/WAFLogs/cloudfront/splunk-fs-s3-workshop-webacl/{year}/{month}/{day}/{hour}/{minute}. See example below.
 
 ![Folder Structure AWS WAF Web ACL Logs is displayed at the top of the screen](/static/lab3/3c/folder-structure-aws-waf-logs.png)
 
