@@ -40,13 +40,13 @@ Like before there are lots of options here. `Select the Machine Data Lake (MDL) 
 
 10. Similar to creating other datasets, we need to enter important information for our MDL dataset. `Fill in the details as required below.`
 
-- **Dataset Name:** access_combined_mdl
-- **Dataset description:** Machine Data Lake location that will be used to store low utilised access_combined data. 
-- **Data retention options:** leave as is
-- **Promotion Limits:** leave as is
-- **Max rolling window:** leave as is
-- **Max allowed promotion volume:** leave limited as toggled
-- **Volume limit:** leave as 1GB
+- **Dataset Name:** `access_combined_mdl`
+- **Dataset description:** `Machine Data Lake location that will be used to store low utilised access_combined data.`
+- **Data retention options:** `leave as is`
+- **Promotion Limits:** `leave as is`
+- **Max rolling window:** `leave as is`
+- **Max allowed promotion volume:** `leave limited as toggled`
+- **Volume limit:** `leave as 1GB`
 
 See example filled out MDL dataset definition:
 
