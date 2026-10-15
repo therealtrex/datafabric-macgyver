@@ -134,11 +134,15 @@ Its time to create another dataset, this time for CloudFront Access logs.
 
 4. `Click the blue Create dataset button.`
 5. Like before, `Select Amazon S3` from the list. `Click Next`
-6. `Select the connection we created just now.` Once selected, `Click Next`
+6. `Select the connection we created` Once selected, `Click Next`
 
 ![Select connection](/static/lab3/3a/select-connection.png)
 
-7. `Name your dataset` eg cloudfront_access_logs
+7. `Copy and paste the below into the Dataset Name field`
+
+```
+cloudfront_access_logs
+```
 
 For the next step of Amazon S3 location we need to go back to the AWS console. 
 
