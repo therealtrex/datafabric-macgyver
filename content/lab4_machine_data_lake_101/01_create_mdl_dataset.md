@@ -40,7 +40,7 @@ Like before there are lots of options here. `Select the Machine Data Lake (MDL) 
 
 10. Similar to creating other datasets, we need to enter important information for our MDL dataset. `Fill in the details as required below.`
 
-- **Dataset Name:** linux_secure_mdl
+- **Dataset Name:** ```linux_secure_mdl```
 - **Dataset description:** Machine Data Lake location that will be used to store low utilised linux_secure data. 
 - **Data retention options:** leave as is
 - **Promotion Limits:** leave as is
