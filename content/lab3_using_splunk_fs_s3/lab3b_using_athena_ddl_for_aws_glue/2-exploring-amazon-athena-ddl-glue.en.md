@@ -2,15 +2,15 @@ In this section of lesson two we will have a look at Amazon Athena and its power
 
 ## Amazon Athena DDL ##
 
-1. Let's start by navigating to the Amazon Athena service. In the AWS Console, **search for and select, Athena.**
+1. Let's start by navigating to the Amazon Athena service. In the AWS Console, `search for and select, Athena.`
 
 ![Select Athena Service in the AWS console](/static/lab3/3b/select-amazon-athena-service.png)
 
-2. From the main Athena welcome page we need to **select Query your data in Athena console** option followed by **Launch query editor.** See example below: 
+2. From the main Athena welcome page we need to `select Query your data in Athena console` option followed by `Launch query editor.` See example below: 
 
 ![Welcome Amazon Athena Page Selection](/static/lab3/3b/welcome-athena-page.png)
 
-3. Welcome to Athena Editor! From here you should be taken straight into the **Editor tab. If not select it now.**
+3. Welcome to Athena Editor! From here you should be taken straight into the `Editor tab. If not select it now.`
 
 >[!NOTE]
 >If you see a screenshot like the one below, then you may need to configure the S3 bucket for Amazon Athena. It is required for running queries. Follow the optional steps below it fix this issue.
@@ -29,7 +29,7 @@ In this section of lesson two we will have a look at Amazon Athena and its power
 <p></p>
 <p><img src="/static/lab3/3b/athena-query-result-bucket-settings.png" alt="Alt text"/></p>
 <p></p>
-<p>6. You should be prompted with Settings successfully updated green box. You will note you are in the Settings tab now. **Click Editor Tab** to go back to the query editor section of Athena.</p>
+<p>6. You should be prompted with Settings successfully updated green box. You will note you are in the Settings tab now. `Click Editor Tab` to go back to the query editor section of Athena.</p>
 <p></p>
 </details>
 
@@ -39,18 +39,18 @@ In this section of lesson two we will have a look at Amazon Athena and its power
 >Amazon Athena uses a language known as DDL (Data Definition Language) which is a subset of SQL commands. We can use DDL for many things like querying data but for this example we will use it to create a Amazon Glue Table for our VPC flow logs. This is a great place to start when first learning how to create Amazon Glue tables and there are plenty of examples online for different AWS sources. 
 
 
-4. Time to run our first Amazon Athena query. On the left-hand pane under Data, Make sure **database is set to our splunk-fs-s3-{account-id} database.**
+4. Time to run our first Amazon Athena query. On the left-hand pane under Data, Make sure `database is set to our splunk-fs-s3-{account-id} database.`
 
 ![Select Glue Database in Athena under editor](/static/lab3/3b/select-glue-database-in-athena.png)
 
-5. Before we can run our first Athena query we need our S3 location for our VPC flow logs. If not open already **in a NEW TAB go to Amazon S3** and **select your S3 logging bucket e.g. splunk-fs-s3-logs-{account-id}-{region}**
-6. Click into the bucket until you see the aws-service=vpcflowlogs folder. **Select the tick box next to it** and then **click the button for Copy S3 URI**. See example image below. 
+5. Before we can run our first Athena query we need our S3 location for our VPC flow logs. If not open already `in a NEW TAB go to Amazon S3` and `select your S3 logging bucket e.g. splunk-fs-s3-logs-{account-id}-{region}`
+6. Click into the bucket until you see the aws-service=vpcflowlogs folder. `Select the tick box next to it` and then `click the button for Copy S3 URI`. See example image below. 
 
 ![Copy S3 bucket URI for vpcflowlogs using the blue button on the left hand side](/static/lab3/3b/copy-vpcflowlogs-s3-uri.png)
 
-7. **Paste this somewhere to use in next steps** It should be something like this: **s3://splunk-fs-s3-logs-{account-id}-{region}/AWSLogs/aws-account-id={account-id}/aws-service=vpcflowlogs/**
+7. `Paste this somewhere to use in next steps` It should be something like this: `s3://splunk-fs-s3-logs-{account-id}-{region}/AWSLogs/aws-account-id={account-id}/aws-service=vpcflowlogs/`
 
-8. Back in our Athena tab, **Copy and paste the following code into the Query editor box.**
+8. Back in our Athena tab, `Copy and paste the following code into the Query editor box.`
   
 
 ```Athena Create VPC Flow Log Table
@@ -106,19 +106,19 @@ TBLPROPERTIES (
 )
 
 ```
-11. Scroll down the bottom of the DDL and **fill out the location section labelled \<S3 URI\>** using the S3 URI we copied earlier. Pay careful attention to the format when copying it. 
+11. Scroll down the bottom of the DDL and `fill out the location section labelled \<S3 URI\>` using the S3 URI we copied earlier. Pay careful attention to the format when copying it. 
 - eg s3://splunk-fs-s3-logs-{account-id}-{region}/AWSLogs/aws-account-id={account-id}/aws-service=vpcflowlogs/
 
-12. Feel free to explore the DDL code, you will note right at the top is the name of the new table we are creating. When ready, **click the Run button.**
-15. If all goes to plan you should see a **Green Completed sign below** the Run button. See example below
+12. Feel free to explore the DDL code, you will note right at the top is the name of the new table we are creating. When ready, `click the Run button.`
+15. If all goes to plan you should see a `Green Completed sign below` the Run button. See example below
 
 ![Athena text being run that shows a DDL Query Successful](/static/lab3/3b/ddl-query-successful.png)
 
 Next we need to tell Athena to run a repair command to refresh and detect the partitions in the folder structure. 
 
-16. In AWS Athena, **click the '+' button on the right hand side** to create a new Athena query. 
+16. In AWS Athena, `click the '+' button on the right hand side` to create a new Athena query. 
 
-17. **Paste the following code in below and click Run**
+17. `Paste the following code in below and click Run`
 
 >[!WARNING]
 >Before running the command make sure your database is set to splunk-fs-s3-{account id} as Athena changes it to default after running the first query above!
@@ -133,24 +133,24 @@ MSCK REPAIR TABLE splunk_vpc_flow_logs
 >![Successful Repair VPC Flow Logs Table](/static/lab3/3b/sucessful-athena-repair-command-vpcflowlogs.png)
 
 
-17. Now let's check out our new AWS Glue Table. From your AWS Console, **search for and open in a NEW TAB, AWS Glue.**
+17. Now let's check out our new AWS Glue Table. From your AWS Console, `search for and open in a NEW TAB, AWS Glue.`
 
 ![Select AWS Glue from the AWS Console](/static/lab3/3b/selectawsglue.png)
 
-18. From your AWS Glue page, **select Databases**
-19. **Select the splunk-fs-s3-{account-id}** from the list
-20. You should now see two tables. Once from Lesson One for CloudFront, and the new one we just created. **Select the splunk_vpc_flow_logs table.**
+18. From your AWS Glue page, `select Databases`
+19. `Select the splunk-fs-s3-{account-id}` from the list
+20. You should now see two tables. Once from Lesson One for CloudFront, and the new one we just created. `Select the splunk_vpc_flow_logs table.`
 
 ![Select AWS Glue VPC Flow Log Table](/static/lab3/3b/select_vpc_flow_logs_glue_table.png)
 
-21. From here it is now time to **compare the schema settings with the VPC Flow log you opened up** in section one of lesson two. Have a look at the headings and structure of the schema. They should match! See example below:
+21. From here it is now time to `compare the schema settings with the VPC Flow log you opened up` in section one of lesson two. Have a look at the headings and structure of the schema. They should match! See example below:
 
 ![Example text showing to compare VPC Flow Log File to Glue Table Schema](/static/lab3/3b/compare-vpc-flow-log-to-glue-table-schema.png)
 
 >[!NOTE]
 >You may see additional fields in the Glue table schema which aren't in your VPC Flow log, e.g. vcp_flags and pkt-srcaddr. This is ok; These additional fields may appear in more advanced VPC flow lot types so important to define for those use cases in the future.
 
-22. Feel free to click **Advanced Properties** to look at the additional settings before moving on. These settings were also configured during the DDL command.
+22. Feel free to click `Advanced Properties` to look at the additional settings before moving on. These settings were also configured during the DDL command.
 
 Well done! You have now configured your first Glue Table using Amazon Athena DDL script. This is a powerful tool and very handy way to create AWS Glue Tables easily. Time to now create another Federated dataset in Splunk!
 
