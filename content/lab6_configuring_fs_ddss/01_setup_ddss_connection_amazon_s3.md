@@ -68,9 +68,9 @@ Before we fill out the rest of the table we must create an Amazon S3 bucket.
 
 15. `Select inside the box and copy the policy to clipboard.`
 
-16. Back in your AWS console to back to your AWS S3 bucket tab. 
+16. Back in your AWS console, `go back to your AWS S3 bucket tab.` 
 
-17. Select the Permissions tab as shown below:
+17. `Select the Permissions tab` as shown below:
 
 ![image_tag](/static/lab6/selecting-s3-permissions-tab.png)
 
