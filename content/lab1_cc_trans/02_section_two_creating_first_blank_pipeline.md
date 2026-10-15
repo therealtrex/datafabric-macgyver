@@ -52,7 +52,7 @@ From here we will see there is four ways we can partition (or intercept) our dat
 
 6. Select the `index` partition option.
 
-![image_tag](/static/lab1/partition-by-sourcetype.png)
+![image_tag](/static/lab1/partition-by-index.png)
 
 7. In the **Value** field, copy and paste the following:
 
