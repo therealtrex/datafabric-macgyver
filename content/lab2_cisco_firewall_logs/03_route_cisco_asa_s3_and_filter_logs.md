@@ -275,10 +275,18 @@ function drop_required_logs($source) {
 
 9. When ready `click the Save pipeline button` top-right hand side. 
 
+You will see another popup for the active pipeline warning. This is just telling us we are about to overwrite a pipeline which is already active.
+
+See example below: 
+
+![image_tag](/static/lab2/save-active-pipeline.png)
+
+10. `Click Save` on the active pipeline warning to continue
+
 >[!NOTE]
 >You can check the status of the pipeline by selecting pipeline from the top-left hand side and check that it is applied
 
-Once thw new pipeline is deployed go back to your Splunk tab we had open earlier where we ran our search. 
+Once the new pipeline is deployed go back to your Splunk tab we had open earlier where we ran our search. 
 
 >[!NOTE]
 >The search below has been slightly modified to return only the last 2 minutes worth of results. This will help us quickly see the impact of the pipeline. 
