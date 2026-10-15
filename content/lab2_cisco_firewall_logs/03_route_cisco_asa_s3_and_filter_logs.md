@@ -170,7 +170,7 @@ Looks like everything it working. let's just try a quick additional check!
 
 <a href="https://parquetreader.com/" target="_blank" rel="noopener noreferrer">Parquet File Reader</a>
 
-<!--<a>[Parquet File Reader](https://parquetreader.com/) target="_blank"</a>-->
+<a>[Parquet File Reader](https://parquetreader.com/){target="_blank"}</a>
 
 See example image of opened log file for Cisco ASA:
 
