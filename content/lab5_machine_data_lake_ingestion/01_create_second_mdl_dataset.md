@@ -173,7 +173,7 @@ Next let's validate data is going into our new MDL catalog for access_combined.
 
 4. `Select the catalog icon` again from the near top right-hand side. 
 
-5. Again, select the access_combined_mdl table
+5. Again, `select the access_combined_mdl table`
 
 6. `Click the search button` again, followed by the `search button again on the warning screen.`
 
