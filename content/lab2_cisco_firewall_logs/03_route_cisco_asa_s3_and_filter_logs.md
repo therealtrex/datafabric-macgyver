@@ -6,7 +6,7 @@ Ok, let's get started!
 
 ### Creating Ingest Pipeline to route to Amazon S3. 
 
-1. From your SCS tenancy tab, `click the Splunk cloud logo` top left-hand side. 
+1. From your SCS tenancy tab, `click the Splunk logo` top left-hand side. 
 2. From here we want to `click on pipelines` on the left-hand menu
 
 From here we should still see our first pipeline we created in lab 1. It is time now to create a new pipeline. 
