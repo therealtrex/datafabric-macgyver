@@ -12,13 +12,17 @@ In this lesson we will configure a new Splunk Federated Dataset for VPC Flow log
 
 2. From here we should be taken into the Data Management App. `Click datasets` on the left hand side. 
 
-3. We should see our first dataset for cloudfront_access_logs is still there. `Click Create Dataset` on the right hand side to create a new dataset. 
+3. We should see our existing datasets still there. `Click Create Dataset` on the right hand side. 
 
 4. `Select Amazon S3 and Click Next`
 
-5. `Select the existing connection` we did from lesson 1 from the drop down. `Click Next` when ready. 
+5. `Select the existing connection and Click next` when ready. 
 
-6. `Name your dataset` eg vpc_flow_logs
+6. Copy and paste the name below into the Dataset name field. 
+
+```
+vpc_flow_logs
+```
 
 7. `Paste the same S3 location we used earlier in our DDL command for the Amazon S3 location` eg s3://splunk-fs-s3-logs-{account-id}-{region}/AWSLogs/aws-account-id={account-id}/aws-service=vpcflowlogs/
 
