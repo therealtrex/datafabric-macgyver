@@ -54,20 +54,15 @@ See example filled out MDL dataset definition:
 
 11. `Click next` when ready. 
 
-Like before we want to add access to our admin user to access the MDL raw table we are creating. 
+Like before we want to add access to our sc_admin user to access the MDL raw table we are creating. 
 
-12. On the configure permissions screen, `click the dropdown and select the Admin role.`
-13. Next to the role. `Click the + button next to admin.` See example below
-
-![image_tag](/static/lab5/select-plus-admin-role.png)
-
-14. From the drop down `select the Streaming promote, static promote, query and view option.` See example below
-
-![image_tag](/static/lab5/streaming-promote-option-selected.png)
+12. On the configure permissions screen, `click the dropdown and select the sc_admin role.`
+13. Next to the role. `Click the + button next to sc_admin.` See example below
+14. From the drop down `select the Streaming promote, static promote, query and view option.`
 
 Once selected your screen should look like this:
 
-![image_tag](/static/lab5/final-role-selection-mdl-setup.png)
+![image_tag](/static/lab5/select-plus-sc-admin-role.png)
 
 13. `Click Next` when ready. 
 
