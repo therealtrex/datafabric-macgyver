@@ -12,7 +12,7 @@ In order to understand the benefit of VPC flow logs we need to configure some. V
 >There are many ways to configure VPC flow logs from the AWS Console. Below is the simplest for our workshop
 
 
-3. From the VPCs page you will see the VPC created as part of the workshop. If it's not selected, select it now by ticking the tick box for it. See example below
+3. From the VPCs page you will see the VPC created as part of the workshop. If it's not selected, `select it now by ticking the tick box for it.` See example below
 
 ![Select Your VPC](/static/lab3/3b/selectyourvpc.png)
 
@@ -22,11 +22,11 @@ From here you will see the network layout of the VPC. This is a handy tool to ch
 
 ![Select Resource map in the top section](/static/lab3/3b/select-resource-map-tab.png)
 
-5. Now it's time to create a VPC Flow log. `Select the Flow logs tab.` You will note currently there are no flow logs. See example below.
+5. Now it's time to create a VPC Flow log. `Select the Flow logs tab.` You will note currently there are no flow logs. See example below:
 
 ![Select Flow logs in the top section](/static/lab3/3b/select-flow-logs-tab.png)
 
-6. On the right-hand side, click the Create flow log button
+6. On the right-hand side, `click the Create flow log button.`
 
 ![Select Orange Create Flow Log Button](/static/lab3/3b/select-create-flow-log-button.png)
 
@@ -43,7 +43,7 @@ From here you will see the network layout of the VPC. This is a handy tool to ch
 10. Now we have copied S3 arn we will use that in the flow log setup page. `Go back to the other tab for your flow logs now.`
 
 11. From the Create flow log page we will fill in a few details as outlined below. See example at end.
-- **Name:** give your flow log a name e.g. full-vpc-flow-log
+- **Name:** full-vpc-flow-log
 - **Filter:** leave as default (all)
 - **Maximum aggregation interval:** Set to 1 minute
 - **Destination:** Set to Send to an Amazon S3 bucket
