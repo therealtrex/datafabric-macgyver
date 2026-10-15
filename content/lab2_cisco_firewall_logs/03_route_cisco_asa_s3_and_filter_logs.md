@@ -168,7 +168,7 @@ Looks like everything it working. let's just try a quick additional check!
 
 9. Go to the following website and upload the file to check it out! 
 
-<a>[Parquet File Reader](https://parquetreader.com/)</a>
+<a>[Parquet File Reader](https://parquetreader.com/) target="_blank"</a>
 
 See example image of opened log file for Cisco ASA:
 
