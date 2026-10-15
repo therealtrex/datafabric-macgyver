@@ -122,6 +122,9 @@ You will see a promotion warning appear. See example below:
 
 5. `Click the blue search button` on the warning screen to proceed. 
 
+>[!NOTE]
+>Search results may take up to 10 minutes to start appearing. 
+
 By default the search will already appear as a SPL2 query with a limit of 10 results. You should see some results from our recently created MDL table. See example below: 
 
 ![image_tag](/static/lab4/mdl-search-result-linux-secure.png)
