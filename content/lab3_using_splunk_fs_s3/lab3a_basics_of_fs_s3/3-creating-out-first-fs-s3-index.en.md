@@ -124,10 +124,11 @@ The AWS Account ID has a **copy** button. This should be used to copy the accoun
 -->
 ## Creating CloudFront Dataset ##
 
-Now we have created a connection, we need to create our first dataset for CloudFront Access logs. 
+Its time to create another dataset, this time for CloudFront Access logs. 
 
-
-1. **Select Datasets** section on the left hand Splunk menu. See example below:
+1. From your Splunk Cloud stack, `click the Splunk Cloud Icon.`
+2. `Select Data Management` app. 
+3. `Select Datasets` section on the left hand Splunk menu. See example below:
 
 ![Select datasets](/static/lab3/3a/select-create-datasets.png)
 
@@ -135,59 +136,59 @@ Now we have created a connection, we need to create our first dataset for CloudF
 >This is the section in the data management app where you create your different datasets for Federated Search, Edge Processor and Ingest Processor. 
 
 
-2. **Click the blue Create dataset button.**
-3. Like before, **Select Amazon S3** from the list. **Click Next**
-4. **Select the connection we created just now.** Once selected, **Click Next**
+4. **Click the blue Create dataset button.**
+5. Like before, **Select Amazon S3** from the list. **Click Next**
+6. **Select the connection we created just now.** Once selected, **Click Next**
 
 ![Select connection](/static/lab3/3a/select-connection.png)
 
-5. **Name your dataset** eg cloudfront_access_logs
+7. **Name your dataset** eg cloudfront_access_logs
 
 For the next step of Amazon S3 location we need to go back to the AWS console. 
 
-6. From your AWS console, **search for and select Amazon S3.**
+8. From your AWS console, **search for and select Amazon S3.**
 
 ![Select S3](/static/lab3/3a/select_s3.png)
 
-7. From here **select the logs bucket for our lab.** Should be splunk-fs-s3-logs-{account-id}-{region}
+9. From here **select the logs bucket for our lab.** Should be splunk-fs-s3-logs-{account-id}-{region}
 
-8. Using the links on the folder **select the folders till you see the CloudFront folder.** 
+10. Using the links on the folder **select the folders till you see the CloudFront folder.** 
 
-9. **Tick the box for CloudFront** and **Select Copy S3 URI.** See example below
+11. **Tick the box for CloudFront** and **Select Copy S3 URI.** See example below
 
 ![Copy S3 URI](/static/lab3/3a/copy-s3-uri-cloudfront.png)
 
-10. **Paste the S3 URI back on the Splunk screen for Amazon S3 location.** 
+12. **Paste the S3 URI back on the Splunk screen for Amazon S3 location.** 
 
-11. **Select the Federated search radio button and Click Next**
+13. **Select the Federated search radio button and Click Next**
 
-12. Splunk asks you which type of catalog you use for managing your data. For this lab we will be using the AWS Glue method. **Select AWS Glue**
+14. Splunk asks you which type of catalog you use for managing your data. For this lab we will be using the AWS Glue method. **Select AWS Glue**
 
 >[!NOTE]
 >After selecting AWS Glue, a whole bunch of new fields appear. Most of the fields information can be obtained by looking at the AWS Glue catalog settings we have created for you in this lab. 
 
 
-13. From your AWS console. Go back to the AWS Glue tab or re-open it and **select the splunk_cloudfront_access_logs_w3c table as you did before.**
+15. From your AWS console. Go back to the AWS Glue tab or re-open it and **select the splunk_cloudfront_access_logs_w3c table as you did before.**
 
-14. From the Glue table, table overview. You can see most of our required settings. See them highlighted in the screenshot below
+16. From the Glue table, table overview. You can see most of our required settings. See them highlighted in the screenshot below
 
 ![Glue table summary](/static/lab3/3a/glue-table-summary.png)
 
-15. On the Splunk screen enter the **AWS account id as the AWS Glue catalog ID.** This can be obtained top right hand side of AWS console. 
+17. On the Splunk screen enter the **AWS account id as the AWS Glue catalog ID.** This can be obtained top right hand side of AWS console. 
 
 >[!NOTE]
 >You can confirm this if you wanted to. On your AWS Glue console. **Select Catalogs from the left hand menu.** You will see here your catalog name is your AWS account id.
 
 
-16. **Enter in the AWS Glue Database name from your Table overview** eg splunk-fs-s3-{accound-id}
-17. **Enter in your AWS Glue table name from your Table overview.** eg splunk_cloudfront_access_logs_w3c
-18. **Select Non-table format** as the format for our table. 
+18. **Enter in the AWS Glue Database name from your Table overview** eg splunk-fs-s3-{accound-id}
+19. **Enter in your AWS Glue table name from your Table overview.** eg splunk_cloudfront_access_logs_w3c
+20. **Select Non-table format** as the format for our table. 
 
 See example so far:
 
 ![Data set settings CloudFront One](/static/lab3/3a/configured-data-set-cloudfront-settings-1.png)
 
-19. In the Time settings details enter the text of **time for Time field** , **%H:%M:%S for Time format** and **_time as Unit time field** as shown in the example below:
+21. In the Time settings details enter the text of **time for Time field** , **%H:%M:%S for Time format** and **_time as Unit time field** as shown in the example below:
 
 
 ![CloudFront Federated Index Time Settings page](/static/lab3/3a/cloudfront-federated-index-time-settings.png)
@@ -196,11 +197,11 @@ See example so far:
 >Time settings in Federated Search can break or alter the outcome of your search result which could lead to changes in cost as well. CloudFront Access Logs uses a 24 hour **Hour Minute Second** format for time. This is why we have chosen %H:%M:%S in the time format settings for the federated >index. If you are attending this workshop as part of a joint Splunk / AWS immersion day we will explain in further details around the time settings and how they maybe important to your environment. More information can be found **[here.](https://help.splunk.com/en/splunk-cloud-platform/search/federated-search/10.4.2604/sdselect-command-legacy/use-time-fields-in-sdselect-searches)** 
 
 
-20. Leave timezone settings as is and **select Next to continue.** 
+22. Leave timezone settings as is and **select Next to continue.** 
 
-21. We are not using KMS keys for this lab so **select No** for KMS keys on the next screen. You should now see a button appear for Generating Policies. 
+23. We are not using KMS keys for this lab so **select No** for KMS keys on the next screen. You should now see a button appear for Generating Policies. 
 
-22. **Click Generate policies** button. Please take the time to study these before clicking next. 
+24. **Click Generate policies** button. Please take the time to study these before clicking next. 
 
 >[!NOTE]
 >If you were doing this in your own environment you would need to create policies using the ones generated. These are then attached to the role we modified earlier that we assume permissions from. Thus giving Splunk the permissions needed to run the actions we need in your account. 
@@ -208,9 +209,9 @@ See example so far:
 >This lab has these policies already defined so we wont need to do this. If you are running this in an instructor led course your instructor will explain these policies too you. 
 
 
-23. **Click Next when ready**
-24. Read the note about AWS policies and **click Confirm** when ready. 
-25. Review the settings and **Click create Dataset**. See example below. 
+25. **Click Next when ready**
+26. Read the note about AWS policies and **click Confirm** when ready. 
+27. Review the settings and **Click create Dataset**. See example below. 
 
 ![CloudFront Dataset summary](/static/lab3/3a/summary-create-cloudfront-dataset.png)
 
