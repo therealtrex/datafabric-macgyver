@@ -117,7 +117,7 @@ So let's create an EC2 instance now and make sure it's in that VPC, so we can ge
 
 ![EC2 Summary of the settings you have just configured](/static/lab3/3b/launch-ec2-instance.png)
 
-6. If all things went well you should see a green box saying, **Success**. You will see a **instance ID hyperlink in the green box. Click this now.**
+6. If all things went well you should see a green box saying, **Success**. 
 
 ![EC2 Instance Hyperlink is shown in a green banner](/static/lab3/3b/ec2-instance-hyperlink.png)
 
