@@ -61,16 +61,11 @@ On the next screen you can get granular around who has access to perform actions
 
 12. On the configure permissions screen, `click the dropdown and select the sc_admin role.`
 13. Next to the role. `Click the + button next to sc_admin.` See example below
-
-![image_tag](/static/lab4/select-plus-sc-admin-role.png)
-
 14. From the drop down `select the Streaming promote, static promote, query and view option.` See example below
-
-![image_tag](/static/lab4/streaming-promote-option-selected.png)
 
 Once selected your screen should look like this:
 
-![image_tag](/static/lab4/final-role-selection-mdl-setup.png)
+![image_tag](/static/lab4/select-plus-sc-admin-role.png)
 
 13. `Click Next` when ready. 
 
