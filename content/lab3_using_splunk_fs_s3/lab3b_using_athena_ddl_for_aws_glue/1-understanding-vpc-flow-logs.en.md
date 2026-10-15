@@ -2,11 +2,11 @@ In order to understand the benefit of VPC flow logs we need to configure some. V
 
 ## Setup VPC Flow Logs ##
 
-1. From your AWS console search for and **select VPC**
+1. From your AWS console search for and `select VPC`
 
 ![Select VPC Service](/static/lab3/3b/select-vpc.png)
 
-2. This is the VPC dashboard. From here there are many things to see and do but for this lesson we want to explore the VPC. From the **left-hand menu, select Your VPCs.**
+2. This is the VPC dashboard. From here there are many things to see and do but for this lesson we want to explore the VPC. From the `left-hand menu, select Your VPCs.`
 
 >[!NOTE]
 >There are many ways to configure VPC flow logs from the AWS Console. Below is the simplest for our workshop
@@ -16,13 +16,13 @@ In order to understand the benefit of VPC flow logs we need to configure some. V
 
 ![Select Your VPC](/static/lab3/3b/selectyourvpc.png)
 
-4. This will open up (if not open already) a panel down below showing you key information about your VPC. Let's explore the resource map by **clicking the Resource Map tab.**
+4. This will open up (if not open already) a panel down below showing you key information about your VPC. Let's explore the resource map by `clicking the Resource Map tab.`
 
 From here you will see the network layout of the VPC. This is a handy tool to check how things are configured for your VPC in a single visual representation. See example below
 
 ![Select Resource map in the top section](/static/lab3/3b/select-resource-map-tab.png)
 
-5. Now it's time to create a VPC Flow log. **Select the Flow logs tab.** You will note currently there are no flow logs. See example below.
+5. Now it's time to create a VPC Flow log. `Select the Flow logs tab.` You will note currently there are no flow logs. See example below.
 
 ![Select Flow logs in the top section](/static/lab3/3b/select-flow-logs-tab.png)
 
@@ -30,17 +30,17 @@ From here you will see the network layout of the VPC. This is a handy tool to ch
 
 ![Select Orange Create Flow Log Button](/static/lab3/3b/select-create-flow-log-button.png)
 
-7. **Leaving this tab open** we need to go and copy the S3 ARN as we will need it to create a flow log. To do this **search for and open in a new tab S3.**
+7. **Leaving this tab open** we need to go and copy the S3 ARN as we will need it to create a flow log. To do this `search for and open in a new tab S3.`
 
 ![Navigate to the S3 Service in the AWS console](/static/lab3/3b/selects3.png)
 
-8. **Select the logging s3 bucket** for the workshop (same one used in lesson one), should be starting with **splunk-fs-s3-logs-{account-id}-{region}**
+8. `Select the logging s3 bucket` for the workshop (same one used in lesson one), should be starting with **splunk-fs-s3-logs-{account-id}-{region}**
 
-9. **Select the properties tab** and **copy the Amazon Resource Name (ARN) for the bucket**. See example below. Note: you can use the two blue boxes to copy it.
+9. `Select the properties tab` and `copy the Amazon Resource Name (ARN) for the bucket`. See example below. Note: you can use the two blue boxes to copy it.
 
 ![Use the Copy button on the Logging Bucket S3 ARN](/static/lab3/3b/copy-s3-logging-bucket-arn.png)
 
-10. Now we have copied S3 arn we will use that in the flow log setup page. **Go back to the other tab for your flow logs now.**
+10. Now we have copied S3 arn we will use that in the flow log setup page. `Go back to the other tab for your flow logs now.`
 
 11. From the Create flow log page we will fill in a few details as outlined below. See example at end.
 - **Name:** give your flow log a name e.g. full-vpc-flow-log
@@ -51,23 +51,23 @@ From here you will see the network layout of the VPC. This is a handy tool to ch
 
 ![Create Flow Log Settings with the detail as provided you will need to fill out several sections](/static/lab3/3b/create-flow-log-settings.png)
 
-12. Scroll down to where it says **Log file format** and select **parquet** 
-13. **Tick the box for Hive-compatible S3 prefix**
-13. Select **Every 1 hour (60 minutes).** under partition logs by time. See example below for options selected:
+12. Scroll down to where it says `Log file format` and select `parquet` 
+13. `Tick the box for Hive-compatible S3 prefix`
+13. Select `Every 1 hour (60 minutes).` under partition logs by time. See example below for options selected:
 
 ![Partition by hour setting Flow Logs](/static/lab3/3b/logfileformat-partitionlogbytime-vpcflowlogssettings.png)
 
-13. Leave all remaining settings and **click Create flow log**
+13. Leave all remaining settings and `click Create flow log`
 
-14. You should see a green rectangle saying **Successfully created flow log for vpc-xxx.**
+14. You should see a green rectangle saying `Successfully created flow log for vpc-xxx.`
 
 ![Success Flow Log Created banner is green across the top of the screen](/static/lab3/3b/success-vpc-flow-log-created.png)
 
-15. **Re-Select Your VPC's (left hand menu) then the Flow logs tab.** You should now see a new flow log!
+15. `Re-Select Your VPC's (left hand menu) then the Flow logs tab.` You should now see a new flow log!
 
-16. **Click the link for the Destination Name** (your s3 bucket). This should open up your S3 bucket in a new tab.
+16. `Click the link for the Destination Name` (your s3 bucket). This should open up your S3 bucket in a new tab.
 
-17. **Navigate the S3 folders for AWSLogs.** You should now (or very soon) notice a new folder in the Apache Hive format. eg aws-account-id={account-id}. If you select into the folder you will note we have NO VPC Flow logs so far.
+17. `Navigate the S3 folders for AWSLogs.` You should now (or very soon) notice a new folder in the Apache Hive format. eg aws-account-id={account-id}. If you select into the folder you will note we have NO VPC Flow logs so far.
 
 So let's create an EC2 instance now and make sure it's in that VPC, so we can generate some VPC Flow logs!
 
@@ -75,11 +75,11 @@ So let's create an EC2 instance now and make sure it's in that VPC, so we can ge
 >If you are part of an instructor led lab we will cover off some more details about Apache Hive format which uses key=value pair folder structure. This method is generally the easiest way to optimise your searches. More on that later. AWS has some good documentation on this **[here.](https://docs.aws.amazon.com/athena/latest/ug/partitions.html)**
 
 
-18. From your AWS console, **search for and select ec2.**
+18. From your AWS console, `search for and select ec2.`
 
 ![Select EC2 Service from the AWS console ](/static/lab3/3b/select-ec2-service.png)
 
-19. You will note there are no instances currently in your environment. **Click the Launch instance button** in the middle left-hand side of the screen.
+19. You will note there are no instances currently in your environment. `Click the Launch instance button` in the middle left-hand side of the screen.
 
 >[!NOTE]
 >This next section is broken down into multiple steps for creating an ec2. Pay close attention to the steps and screenshots.
@@ -96,7 +96,7 @@ So let's create an EC2 instance now and make sure it's in that VPC, so we can ge
 ![Enter the EC2 Service Name and Machine Type into the fields](/static/lab3/3b/ec2-machne-type-and-name.png)
 
 2. Time to create an EC2 key pair and select it. From the Key pair section. Do the following:
-- Next to the Key pair name-drop down, **Click Create new key pair**
+- Next to the Key pair name-drop down, `Click Create new key pair`
     - **Key Pair Name:** Give your keypair a name eg mr-key-pair
     - **Private Key file Format:** Select format you prefer eg Putty or OpenSSH. 
     - **Click Create key pair** when ready.
@@ -115,7 +115,7 @@ So let's create an EC2 instance now and make sure it's in that VPC, so we can ge
 >When you create the key pair you should have seen this download to your computer. Make sure you pay attention to where it went, you may need it later!
 
 
-3. You can leave all remaining defaults and **click the Launch Instance** button to the right hand side. 
+3. You can leave all remaining defaults and `click the Launch Instance` button to the right hand side. 
 
 ![EC2 Summary of the settings you have just configured](/static/lab3/3b/launch-ec2-instance.png)
 
@@ -131,7 +131,7 @@ So let's create an EC2 instance now and make sure it's in that VPC, so we can ge
 >
 >![VPC Flow Logs Folder In S3 under Object and vpcflowlogs/ folder](/static/lab3/3b/vpc-flow-logs-folder-in-s3.png)
 
-1. Now we see the logs, let's look at the format of a VPC Flow Log. **Select the first flow log from the list using the tick box and click the download button.** See example below.
+1. Now we see the logs, let's look at the format of a VPC Flow Log. `Select the first flow log from the list using the tick box and click the download button.` See example below.
 
 ![Select the VPC from the AWS console and navigate to the where the files are located at the smallest folder](/static/lab3/3b/vpcflow-log-download.png)
 
