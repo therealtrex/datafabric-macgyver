@@ -54,9 +54,17 @@ You will notice in our destination page we will see our new destination for Amaz
 
 ![image_tag](/static/lab2/new_s3_destination_in_pipeline_wizard.png)
 
-15. `Select our new cisco-asa-s3-logs destination.`
+Because of the flow of data we want to start with the splunk_indexer as the default output still. 
 
-16. `Click Done` when ready. 
+15. `Select splunk_indexer` from the list
+
+16. `Select Specify Index for all events`
+
+17. `Select cisco-asa-logs` 
+
+18. `Click Done` when ready. See exa,ple filled out below
+
+![image_tag](/static/lab2/select-splunk-indexer-cisco-pipeline.png)
 
 You should now see a default blank pipeline ready to go! Hopefully by now you are getting a grip on what is what and what will happen if we apply it now? 
 
