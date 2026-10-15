@@ -215,7 +215,7 @@ See example so far:
 
 ![CloudFront Dataset summary](/static/lab3/3a/summary-create-cloudfront-dataset.png)
 
-You have now created your first dataset. It is now time to search it and see if it is working correctly. 
+Dataset should now be created. It is now time to search it and see if it is working correctly. 
 
 ## Running our first Federated Search for Amazon S3 ##
 
