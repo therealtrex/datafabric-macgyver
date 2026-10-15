@@ -8,11 +8,11 @@ Welcome to the Cisco Data Fabric MacGyver workshop! This workshop is designed to
 
 The workshop was written by T-REX. Our friendly dinosaur who loves getting under the covers of different topics. 
 
-To start us off its key to understand at a high level, T-REX's three pillars of the Cisco Data Fabric. These are:
+To start us off, its key to understand at a high level, T-REX's three pillars of the Cisco Data Fabric. These are:
 
 ## Pillar One: Data Streaming ##
 
-The data streaming pillar of Splunk's, Cisco Data Fabric is made up of all the technology pieces that help you manipulate data. We cannot do it justice here but some of these are:
+The data streaming pillar of the Cisco Data Fabric is made up of all the technology pieces that help you manipulate data. We cannot do it justice here but some of these are:
 * Edge and Ingest Processor. These are the main data manipulation tools which help you redact, route and manipulate data to where you want it. 
 * Our AI powered data onboarding tools which help you use the power of AI to onboard data at agentic speed! 
 
