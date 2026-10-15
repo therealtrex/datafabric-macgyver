@@ -53,16 +53,16 @@ See example filled out MDL dataset definition:
 ![image_tag](/static/lab4/mdl-define-dataset-filled-in.png)
 
 >[!NOTE]
->We covered off quote a few options there, we don't have time to go through which options we chose for what reason but all the information you need can be found <a>[HERE](https://help.splunk.com/en/data-management/onboard-data-to-splunk-cloud-platform/land-data-in-machine-data-lake/1.0/land-and-verify-data/create-a-machine-data-lake-raw-table)</a>
+>We covered off quite a few options there, we don't have time to go through which options we chose for what reason but all the information you need can be found <a>[HERE](https://help.splunk.com/en/data-management/onboard-data-to-splunk-cloud-platform/land-data-in-machine-data-lake/1.0/land-and-verify-data/create-a-machine-data-lake-raw-table)</a>
 
 11. `Click next` when ready. 
 
 On the next screen you can get granular around who has access to perform actions on the dataset. For simplicity we are just going to allow access to Admin for this lab but you can find more information on setting user permissions on MDL <a>[HERE](https://help.splunk.com/en/data-management/onboard-data-to-splunk-cloud-platform/land-data-in-machine-data-lake/1.0/prepare-for-onboarding/access-control-roles-and-capabilities)</a>
 
-12. On the configure permissions screen, `click the dropdown and select the Admin role.`
-13. Next to the role. `Click the + button next to admin.` See example below
+12. On the configure permissions screen, `click the dropdown and select the sc_admin role.`
+13. Next to the role. `Click the + button next to sc_admin.` See example below
 
-![image_tag](/static/lab4/select-plus-admin-role.png)
+![image_tag](/static/lab4/select-plus-sc-admin-role.png)
 
 14. From the drop down `select the Streaming promote, static promote, query and view option.` See example below
 
