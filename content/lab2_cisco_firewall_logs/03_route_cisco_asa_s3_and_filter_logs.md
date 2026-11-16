@@ -90,6 +90,11 @@ $pipeline = | from $source
     ];
 ```
 
+>[!IMPORTANT]
+>When you copy and paste the code above and try to PREVIEW the sample data you will see the following error appear. This is expected. Please ignore this and continue on with the labs. 
+> ![image_tag](/static/lab2/error_preview_clone.png) 
+>
+
 See example of pipeline below: 
 
 ![image_tag](/static/lab2/clone_data_s3_cisco_asa.png)
